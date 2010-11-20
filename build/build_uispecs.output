@@ -1,0 +1,158 @@
+Build settings from command line:
+    ARCHS = i386
+    PLATFORM_NAME = iphonesimulator
+    SDKROOT = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk
+
+
+=== BUILD NATIVE TARGET UISpecs OF PROJECT Expectacular WITH CONFIGURATION Release ===
+Check dependencies
+2010-11-19 17:52:37.073 xcodebuild[17559:4707] [IT] ASSERTION FAILURE in /SourceCache/DevToolsBase/DevToolsBase-1763/pbxcore/Target.subproj/PBXTargetBuildContext.m:2073
+Details:  Assertion failed: [filePath isAbsolutePath]
+Object:   <PBXTargetBuildContext:0x104eab0b0>
+Method:   -setHeadermapToolInvocation:forFilePath:
+Thread:   <NSThread: 0x115085d60>{name = (null), num = 3}
+Backtrace:
+  0  0x00000001002d9ca8 -[PBXTargetBuildContext(DependencyGraphEvents) handleFailureInMethod:object:fileName:lineNumber:messageFormat:arguments:] (in DevToolsCore)
+  1  0x000000010032f2b8 _XCAssertionFailureHandler (in DevToolsCore)
+  2  0x00000001002d6819 -[PBXTargetBuildContext setHeadermapToolInvocation:forFilePath:] (in DevToolsCore)
+  3  0x0000000100198382 -[XCCompilerSpecification computeDependenciesForFilePath:ofType:outputDirectory:inTargetBuildContext:] (in DevToolsCore)
+  4  0x00000001003d51e6 -[XCBuildRuleDGSnapshot(DependencyGraphCreation) computeDependenciesForFilePath:ofType:forBuildFileReference:withOutputDirectory:additionalProperties:inTargetBuildContext:] (in DevToolsCore)
+  5  0x0000000100197067 -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) _computeDependenciesForFilePath:ofType:forBuildFileReference:usingBuildRule:inTargetBuildContext:processedPaths:] (in DevToolsCore)
+  6  0x0000000100196938 -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForFilePath:ofType:forBuildFileReference:usingBuildRule:inTargetBuildContext:] (in DevToolsCore)
+  7  0x000000010019481a -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForBuildFileReference:inTargetBuildContext:] (in DevToolsCore)
+  8  0x0000000100193de2 -[XCBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForAllBuildFileReferencesInTargetBuildContext:] (in DevToolsCore)
+  9  0x000000010019393f -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForAllBuildFileReferencesInTargetBuildContext:] (in DevToolsCore)
+ 10  0x00000001001907a9 -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesInTargetBuildContext:] (in DevToolsCore)
+ 11  0x0000000100183b0e -[XCProductTypeSpecification computeDependenciesInTargetBuildContext:] (in DevToolsCore)
+ 12  0x000000010017f343 -[XCNativeTargetDGSnapshot(DependencyGraphCreation) computeDependenciesInTargetBuildContext:] (in DevToolsCore)
+ 13  0x000000010017b4d9 -[PBXTargetBuildContext createDependencyGraphWithTargetDGSnapshot:] (in DevToolsCore)
+ 14  0x000000010017a471 -[PBXTargetBuildContext(DependencyGraphEvents) dg_setTargetSnapshot:] (in DevToolsCore)
+ 15  0x00007fff88976d2c __invoking___ (in CoreFoundation)
+ 16  0x00007fff88976bfd -[NSInvocation invoke] (in CoreFoundation)
+ 17  0x0000000100179ed5 -[PBXTargetBuildContext(DependencyGraphEvents) processDependencyGraphEvents] (in DevToolsCore)
+ 18  0x00007fff88976d2c __invoking___ (in CoreFoundation)
+ 19  0x00007fff88976bfd -[NSInvocation invoke] (in CoreFoundation)
+ 20  0x0000000100179a25 -[XCInvocationQueue _processNextInvocationInThreadSlotNumber:] (in DevToolsCore)
+ 21  0x000000010017979d -[XCInvocationQueue _processInvocationsInThreadSlotNumber:] (in DevToolsCore)
+ 22  0x00007fff86e8ae8d __NSThread__main__ (in Foundation)
+ 23  0x00007fff88b7c456 _pthread_start (in libSystem.B.dylib)
+ 24  0x00007fff88b7c309 thread_start (in libSystem.B.dylib)
+2010-11-19 17:52:37.073 xcodebuild[17559:4707] [IT] Exception while creating dependency graph for <context(0x104eab0b0:'Specs'):0 nodes (0 to eval), 0 commands> (ignored):
+ASSERTION FAILURE in /SourceCache/DevToolsBase/DevToolsBase-1763/pbxcore/Target.subproj/PBXTargetBuildContext.m:2073
+Details:  Assertion failed: [filePath isAbsolutePath]
+Object:   <PBXTargetBuildContext:0x104eab0b0>
+Method:   -setHeadermapToolInvocation:forFilePath:
+Thread:   <NSThread: 0x115085d60>{name = (null), num = 3}
+Backtrace:
+  0  0x00000001002d9ca8 -[PBXTargetBuildContext(DependencyGraphEvents) handleFailureInMethod:object:fileName:lineNumber:messageFormat:arguments:] (in DevToolsCore)
+  1  0x000000010032f2b8 _XCAssertionFailureHandler (in DevToolsCore)
+  2  0x00000001002d6819 -[PBXTargetBuildContext setHeadermapToolInvocation:forFilePath:] (in DevToolsCore)
+  3  0x0000000100198382 -[XCCompilerSpecification computeDependenciesForFilePath:ofType:outputDirectory:inTargetBuildContext:] (in DevToolsCore)
+  4  0x00000001003d51e6 -[XCBuildRuleDGSnapshot(DependencyGraphCreation) computeDependenciesForFilePath:ofType:forBuildFileReference:withOutputDirectory:additionalProperties:inTargetBuildContext:] (in DevToolsCore)
+  5  0x0000000100197067 -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) _computeDependenciesForFilePath:ofType:forBuildFileReference:usingBuildRule:inTargetBuildContext:processedPaths:] (in DevToolsCore)
+  6  0x0000000100196938 -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForFilePath:ofType:forBuildFileReference:usingBuildRule:inTargetBuildContext:] (in DevToolsCore)
+  7  0x000000010019481a -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForBuildFileReference:inTargetBuildContext:] (in DevToolsCore)
+  8  0x0000000100193de2 -[XCBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForAllBuildFileReferencesInTargetBuildContext:] (in DevToolsCore)
+  9  0x000000010019393f -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForAllBuildFileReferencesInTargetBuildContext:] (in DevToolsCore)
+ 10  0x00000001001907a9 -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesInTargetBuildContext:] (in DevToolsCore)
+ 11  0x0000000100183b0e -[XCProductTypeSpecification computeDependenciesInTargetBuildContext:] (in DevToolsCore)
+ 12  0x000000010017f343 -[XCNativeTargetDGSnapshot(DependencyGraphCreation) computeDependenciesInTargetBuildContext:] (in DevToolsCore)
+ 13  0x000000010017b4d9 -[PBXTargetBuildContext createDependencyGraphWithTargetDGSnapshot:] (in DevToolsCore)
+ 14  0x000000010017a471 -[PBXTargetBuildContext(DependencyGraphEvents) dg_setTargetSnapshot:] (in DevToolsCore)
+ 15  0x00007fff88976d2c __invoking___ (in CoreFoundation)
+ 16  0x00007fff88976bfd -[NSInvocation invoke] (in CoreFoundation)
+ 17  0x0000000100179ed5 -[PBXTargetBuildContext(DependencyGraphEvents) processDependencyGraphEvents] (in DevToolsCore)
+ 18  0x00007fff88976d2c __invoking___ (in CoreFoundation)
+ 19  0x00007fff88976bfd -[NSInvocation invoke] (in CoreFoundation)
+ 20  0x0000000100179a25 -[XCInvocationQueue _processNextInvocationInThreadSlotNumber:] (in DevToolsCore)
+ 21  0x000000010017979d -[XCInvocationQueue _processInvocationsInThreadSlotNumber:] (in DevToolsCore)
+ 22  0x00007fff86e8ae8d __NSThread__main__ (in Foundation)
+ 23  0x00007fff88b7c456 _pthread_start (in libSystem.B.dylib)
+ 24  0x00007fff88b7c309 thread_start (in libSystem.B.dylib)
+2010-11-19 17:52:37.080 xcodebuild[17559:4707] [IT] ASSERTION FAILURE in /SourceCache/DevToolsBase/DevToolsBase-1763/pbxcore/Target.subproj/PBXTargetBuildContext.m:2073
+Details:  Assertion failed: [filePath isAbsolutePath]
+Object:   <PBXTargetBuildContext:0x104eab0b0>
+Method:   -setHeadermapToolInvocation:forFilePath:
+Thread:   <NSThread: 0x115085d60>{name = (null), num = 3}
+Backtrace:
+  0  0x00000001002d9ca8 -[PBXTargetBuildContext(DependencyGraphEvents) handleFailureInMethod:object:fileName:lineNumber:messageFormat:arguments:] (in DevToolsCore)
+  1  0x000000010032f2b8 _XCAssertionFailureHandler (in DevToolsCore)
+  2  0x00000001002d6819 -[PBXTargetBuildContext setHeadermapToolInvocation:forFilePath:] (in DevToolsCore)
+  3  0x0000000100198382 -[XCCompilerSpecification computeDependenciesForFilePath:ofType:outputDirectory:inTargetBuildContext:] (in DevToolsCore)
+  4  0x00000001003d51e6 -[XCBuildRuleDGSnapshot(DependencyGraphCreation) computeDependenciesForFilePath:ofType:forBuildFileReference:withOutputDirectory:additionalProperties:inTargetBuildContext:] (in DevToolsCore)
+  5  0x0000000100197067 -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) _computeDependenciesForFilePath:ofType:forBuildFileReference:usingBuildRule:inTargetBuildContext:processedPaths:] (in DevToolsCore)
+  6  0x0000000100196938 -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForFilePath:ofType:forBuildFileReference:usingBuildRule:inTargetBuildContext:] (in DevToolsCore)
+  7  0x000000010019481a -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForBuildFileReference:inTargetBuildContext:] (in DevToolsCore)
+  8  0x0000000100193de2 -[XCBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForAllBuildFileReferencesInTargetBuildContext:] (in DevToolsCore)
+  9  0x000000010019393f -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForAllBuildFileReferencesInTargetBuildContext:] (in DevToolsCore)
+ 10  0x00000001001907a9 -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesInTargetBuildContext:] (in DevToolsCore)
+ 11  0x0000000100183b0e -[XCProductTypeSpecification computeDependenciesInTargetBuildContext:] (in DevToolsCore)
+ 12  0x000000010017f343 -[XCNativeTargetDGSnapshot(DependencyGraphCreation) computeDependenciesInTargetBuildContext:] (in DevToolsCore)
+ 13  0x000000010017b4d9 -[PBXTargetBuildContext createDependencyGraphWithTargetDGSnapshot:] (in DevToolsCore)
+ 14  0x000000010017a471 -[PBXTargetBuildContext(DependencyGraphEvents) dg_setTargetSnapshot:] (in DevToolsCore)
+ 15  0x00007fff88976d2c __invoking___ (in CoreFoundation)
+ 16  0x00007fff88976bfd -[NSInvocation invoke] (in CoreFoundation)
+ 17  0x0000000100179ed5 -[PBXTargetBuildContext(DependencyGraphEvents) processDependencyGraphEvents] (in DevToolsCore)
+ 18  0x00007fff88976d2c __invoking___ (in CoreFoundation)
+ 19  0x00007fff88976bfd -[NSInvocation invoke] (in CoreFoundation)
+ 20  0x0000000100179a25 -[XCInvocationQueue _processNextInvocationInThreadSlotNumber:] (in DevToolsCore)
+ 21  0x000000010017979d -[XCInvocationQueue _processInvocationsInThreadSlotNumber:] (in DevToolsCore)
+ 22  0x00007fff86e8ae8d __NSThread__main__ (in Foundation)
+ 23  0x00007fff88b7c456 _pthread_start (in libSystem.B.dylib)
+ 24  0x00007fff88b7c309 thread_start (in libSystem.B.dylib)
+2010-11-19 17:52:37.081 xcodebuild[17559:4707] [IT] Exception while creating dependency graph for <context(0x104eab0b0:'Specs'):0 nodes (0 to eval), 0 commands> (ignored):
+ASSERTION FAILURE in /SourceCache/DevToolsBase/DevToolsBase-1763/pbxcore/Target.subproj/PBXTargetBuildContext.m:2073
+Details:  Assertion failed: [filePath isAbsolutePath]
+Object:   <PBXTargetBuildContext:0x104eab0b0>
+Method:   -setHeadermapToolInvocation:forFilePath:
+Thread:   <NSThread: 0x115085d60>{name = (null), num = 3}
+Backtrace:
+  0  0x00000001002d9ca8 -[PBXTargetBuildContext(DependencyGraphEvents) handleFailureInMethod:object:fileName:lineNumber:messageFormat:arguments:] (in DevToolsCore)
+  1  0x000000010032f2b8 _XCAssertionFailureHandler (in DevToolsCore)
+  2  0x00000001002d6819 -[PBXTargetBuildContext setHeadermapToolInvocation:forFilePath:] (in DevToolsCore)
+  3  0x0000000100198382 -[XCCompilerSpecification computeDependenciesForFilePath:ofType:outputDirectory:inTargetBuildContext:] (in DevToolsCore)
+  4  0x00000001003d51e6 -[XCBuildRuleDGSnapshot(DependencyGraphCreation) computeDependenciesForFilePath:ofType:forBuildFileReference:withOutputDirectory:additionalProperties:inTargetBuildContext:] (in DevToolsCore)
+  5  0x0000000100197067 -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) _computeDependenciesForFilePath:ofType:forBuildFileReference:usingBuildRule:inTargetBuildContext:processedPaths:] (in DevToolsCore)
+  6  0x0000000100196938 -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForFilePath:ofType:forBuildFileReference:usingBuildRule:inTargetBuildContext:] (in DevToolsCore)
+  7  0x000000010019481a -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForBuildFileReference:inTargetBuildContext:] (in DevToolsCore)
+  8  0x0000000100193de2 -[XCBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForAllBuildFileReferencesInTargetBuildContext:] (in DevToolsCore)
+  9  0x000000010019393f -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesForAllBuildFileReferencesInTargetBuildContext:] (in DevToolsCore)
+ 10  0x00000001001907a9 -[XCSourcesBuildPhaseDGSnapshot(DependencyGraphCreation) computeDependenciesInTargetBuildContext:] (in DevToolsCore)
+ 11  0x0000000100183b0e -[XCProductTypeSpecification computeDependenciesInTargetBuildContext:] (in DevToolsCore)
+ 12  0x000000010017f343 -[XCNativeTargetDGSnapshot(DependencyGraphCreation) computeDependenciesInTargetBuildContext:] (in DevToolsCore)
+ 13  0x000000010017b4d9 -[PBXTargetBuildContext createDependencyGraphWithTargetDGSnapshot:] (in DevToolsCore)
+ 14  0x000000010017a471 -[PBXTargetBuildContext(DependencyGraphEvents) dg_setTargetSnapshot:] (in DevToolsCore)
+ 15  0x00007fff88976d2c __invoking___ (in CoreFoundation)
+ 16  0x00007fff88976bfd -[NSInvocation invoke] (in CoreFoundation)
+ 17  0x0000000100179ed5 -[PBXTargetBuildContext(DependencyGraphEvents) processDependencyGraphEvents] (in DevToolsCore)
+ 18  0x00007fff88976d2c __invoking___ (in CoreFoundation)
+ 19  0x00007fff88976bfd -[NSInvocation invoke] (in CoreFoundation)
+ 20  0x0000000100179a25 -[XCInvocationQueue _processNextInvocationInThreadSlotNumber:] (in DevToolsCore)
+ 21  0x000000010017979d -[XCInvocationQueue _processInvocationsInThreadSlotNumber:] (in DevToolsCore)
+ 22  0x00007fff86e8ae8d __NSThread__main__ (in Foundation)
+ 23  0x00007fff88b7c456 _pthread_start (in libSystem.B.dylib)
+ 24  0x00007fff88b7c309 thread_start (in libSystem.B.dylib)
+CompileC build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/MyViewSpec.o Spec/UI/Views/MyViewSpec.m normal i386 objective-c com.apple.compilers.gcc.4_2
+    cd /Users/ehanson/Development/Expectacular
+    setenv LANG en_US.US-ASCII
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/ehanson/bin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/amazon-autoscaling/bin:/usr/local/amazon-ec2/bin:/usr/local/amazon-loadbalancing/bin:/usr/local/amazon-cloudwatch/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/Users/ehanson/Development/android-sdk-mac/tools/:/usr/local/git/bin:/opt/local/lib/postgresql83/bin/"
+    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-generated-files.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-own-target-headers.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-all-target-headers.hmap -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-project-headers.hmap -F/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator -F/Users/ehanson/Development/Expectacular/Externals -I/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/include -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/DerivedSources/i386 -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/DerivedSources -include /var/folders/a0/a0Dfg1I-HVaolVzMIk2EHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UIKit-dkhjzandfeqahqagfaydizvrdwpm/UIKit.h -c /Users/ehanson/Development/Expectacular/Spec/UI/Views/MyViewSpec.m -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/MyViewSpec.o
+
+Ld build/Release-iphonesimulator/UISpecs.app/UISpecs normal i386
+    cd /Users/ehanson/Development/Expectacular
+    setenv MACOSX_DEPLOYMENT_TARGET 10.5
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/ehanson/bin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/amazon-autoscaling/bin:/usr/local/amazon-ec2/bin:/usr/local/amazon-loadbalancing/bin:/usr/local/amazon-cloudwatch/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/Users/ehanson/Development/android-sdk-mac/tools/:/usr/local/git/bin:/opt/local/lib/postgresql83/bin/"
+    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -L/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator -F/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator -F/Users/ehanson/Development/Expectacular/Externals -filelist /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/UISpecs.LinkFileList -mmacosx-version-min=10.5 -ObjC -lstdc++ -framework Foundation -framework UIKit -Xlinker -objc_abi_version -Xlinker 2 -framework Cedar-iPhone -framework OCHamcrest-iPhone -framework OCMock-iPhone -o /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/UISpecs
+
+GenerateDSYMFile build/Release-iphonesimulator/UISpecs.app.dSYM build/Release-iphonesimulator/UISpecs.app/UISpecs
+    cd /Users/ehanson/Development/Expectacular
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/ehanson/bin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/amazon-autoscaling/bin:/usr/local/amazon-ec2/bin:/usr/local/amazon-loadbalancing/bin:/usr/local/amazon-cloudwatch/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/Users/ehanson/Development/android-sdk-mac/tools/:/usr/local/git/bin:/opt/local/lib/postgresql83/bin/"
+    /Developer/usr/bin/dsymutil /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/UISpecs -o /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app.dSYM
+
+Touch build/Release-iphonesimulator/UISpecs.app
+    cd /Users/ehanson/Development/Expectacular
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/ehanson/bin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/amazon-autoscaling/bin:/usr/local/amazon-ec2/bin:/usr/local/amazon-loadbalancing/bin:/usr/local/amazon-cloudwatch/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/Users/ehanson/Development/android-sdk-mac/tools/:/usr/local/git/bin:/opt/local/lib/postgresql83/bin/"
+    /usr/bin/touch -c /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app
+
+** BUILD SUCCEEDED **
+

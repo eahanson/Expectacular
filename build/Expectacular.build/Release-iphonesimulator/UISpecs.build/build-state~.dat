@@ -1,0 +1,568 @@
+TUISpecs
+v7
+r0
+t311910700.457669
+cCheck dependencies
+cProcessInfoPlistFile /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/Info.plist UISpecs-Info.plist
+cProcessPCH /var/folders/a0/a0Dfg1I-HVaolVzMIk2EHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UIKit-dkhjzandfeqahqagfaydizvrdwpm/UIKit.h.gch /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/MyView.o /Users/ehanson/Development/Expectacular/App/UI/Views/MyView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/main.o /Users/ehanson/Development/Expectacular/Spec/UI/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/MyViewSpec.o /Users/ehanson/Development/Expectacular/Spec/UI/Views/MyViewSpec.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/Expect.o /Users/ehanson/Development/Expectacular/App/Domain/Models/Expect.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/ExpectacularFailure.o /Users/ehanson/Development/Expectacular/App/Domain/Models/ExpectacularFailure.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/UISpecs normal i386
+cGenerateDSYMFile /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app.dSYM /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/UISpecs
+cTouch /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk
+c000000004CBDF4B10000000000000110
+t1287517361
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BD1FF9E0000000000001355
+t1272053662
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004BD20412000000000000098F
+t1272054802
+s2447
+
+N/Users/ehanson/Development/Expectacular/App/Domain/Models/Expect.h
+c000000004CE7265F00000000000000B9
+t1290217055
+s185
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/App/Domain/Models/Expect.m
+c000000004CE7290800000000000004E2
+t1290217736
+s1250
+i"Expect.h"
+i"ExpectacularFailure.h"
+
+N/Users/ehanson/Development/Expectacular/App/Domain/Models/ExpectacularFailure.h
+c000000004CE724C800000000000000B8
+t1290216648
+s184
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/App/Domain/Models/ExpectacularFailure.m
+c000000004CE724BD0000000000000199
+t1290216637
+s409
+i"ExpectacularFailure.h"
+
+N/Users/ehanson/Development/Expectacular/App/UI/Views/MyView.h
+c000000004CE71F0C00000000000000CA
+t1290215180
+s202
+i<UIKit/UIKit.h>
+
+N/Users/ehanson/Development/Expectacular/App/UI/Views/MyView.m
+c000000004CE71F0C000000000000019D
+t1290215180
+s413
+i"MyView.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar-iPhone.framework/Cedar-iPhone
+c000000004CE71F0C0000000000091F8C
+t1290215180
+s597900
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar-iPhone.framework/Headers/CDRExampleBase.h
+c000000004CE71F0C0000000000000379
+t1290215180
+s889
+i<Foundation/Foundation.h>
+i"CDRExampleParent.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar-iPhone.framework/Headers/CDRExampleParent.h
+c000000004CE71F0C000000000000009E
+t1290215180
+s158
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar-iPhone.framework/Headers/CDRSharedExampleGroupPool.h
+c000000004CE71F0C00000000000003F8
+t1290215180
+s1016
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar-iPhone.framework/Headers/CDRSpec.h
+c000000004CE71F0C00000000000003C1
+t1290215180
+s961
+i<Foundation/Foundation.h>
+i"CDRExampleBase.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar-iPhone.framework/Headers/SpecHelper.h
+c000000004CE71F0C0000000000000100
+t1290215180
+s256
+i"CDRSpec.h"
+i"CDRSharedExampleGroupPool.h"
+i"CDRExampleParent.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCAllOf.h
+c000000004CE71F0C0000000000000395
+t1290215180
+s917
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCAnyOf.h
+c000000004CE71F0C0000000000000395
+t1290215180
+s917
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCBaseMatcher.h
+c000000004CE71F0C000000000000024E
+t1290215180
+s590
+i<Foundation/Foundation.h>
+i"HCMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCDescribedAs.h
+c000000004CE71F0C00000000000004A2
+t1290215180
+s1186
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCHasDescription.h
+c000000004CE71F0C0000000000000338
+t1290215180
+s824
+i"HCInvocationMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCInvocationMatcher.h
+c000000004CE71F0C0000000000000363
+t1290215180
+s867
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCIs.h
+c000000004CE71F0C00000000000003EA
+t1290215180
+s1002
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCIsAnything.h
+c000000004CE71F0C000000000000044E
+t1290215180
+s1102
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCIsCloseTo.h
+c000000004CE71F0C000000000000032E
+t1290215180
+s814
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCIsCollectionContaining.h
+c000000004CE71F0C0000000000000369
+t1290215180
+s873
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCIsCollectionOnlyContaining.h
+c000000004CE71F0C000000000000051D
+t1290215180
+s1309
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCIsDictionaryContaining.h
+c000000004CE71F0C000000000000033B
+t1290215180
+s827
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCIsDictionaryContainingKey.h
+c000000004CE71F0C0000000000000290
+t1290215180
+s656
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCIsDictionaryContainingValue.h
+c000000004CE71F0C00000000000002A8
+t1290215180
+s680
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCIsEqual.h
+c000000004CE71F0C00000000000002C4
+t1290215180
+s708
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCIsEqualIgnoringCase.h
+c000000004CE71F0C00000000000002DC
+t1290215180
+s732
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCIsEqualIgnoringWhiteSpace.h
+c000000004CE71F0C0000000000000338
+t1290215180
+s824
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCIsEqualToNumber.h
+c000000004CE71F0C0000000000001113
+t1290215180
+s4371
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCIsIn.h
+c000000004CE71F0C000000000000021F
+t1290215180
+s543
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCIsInstanceOf.h
+c000000004CE71F0C00000000000002CC
+t1290215180
+s716
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCIsNil.h
+c000000004CE71F0C00000000000002DC
+t1290215180
+s732
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCIsNot.h
+c000000004CE71F0C000000000000033E
+t1290215180
+s830
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCIsSame.h
+c000000004CE71F0C00000000000002B0
+t1290215180
+s688
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCMatcher.h
+c000000004CE71F0C0000000000000686
+t1290215180
+s1670
+i"HCSelfDescribing.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCMatcherAssert.h
+c000000004CE71F0C00000000000002BA
+t1290215180
+s698
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCNumberAssert.h
+c000000004CE71F0C000000000000206E
+t1290215180
+s8302
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCOrderingComparison.h
+c000000004CE71F0C00000000000005DD
+t1290215180
+s1501
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCSelfDescribing.h
+c000000004CE71F0C0000000000000274
+t1290215180
+s628
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCStringContains.h
+c000000004CE71F0C0000000000000286
+t1290215180
+s646
+i"HCSubstringMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCStringEndsWith.h
+c000000004CE71F0C000000000000026F
+t1290215180
+s623
+i"HCSubstringMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCStringStartsWith.h
+c000000004CE71F0C0000000000000281
+t1290215180
+s641
+i"HCSubstringMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/HCSubstringMatcher.h
+c000000004CE71F0C000000000000012D
+t1290215180
+s301
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/Headers/OCHamcrest.h
+c000000004CE71F0C0000000000000402
+t1290215180
+s1026
+i"HCMatcherAssert.h"
+i"HCNumberAssert.h"
+i"HCAllOf.h"
+i"HCAnyOf.h"
+i"HCDescribedAs.h"
+i"HCIs.h"
+i"HCIsAnything.h"
+i"HCIsEqual.h"
+i"HCIsInstanceOf.h"
+i"HCIsNil.h"
+i"HCIsNot.h"
+i"HCIsSame.h"
+i"HCIsCollectionContaining.h"
+i"HCIsCollectionOnlyContaining.h"
+i"HCIsDictionaryContaining.h"
+i"HCIsDictionaryContainingKey.h"
+i"HCIsDictionaryContainingValue.h"
+i"HCIsIn.h"
+i"HCIsCloseTo.h"
+i"HCIsEqualToNumber.h"
+i"HCOrderingComparison.h"
+i"HCHasDescription.h"
+i"HCIsEqualIgnoringCase.h"
+i"HCIsEqualIgnoringWhiteSpace.h"
+i"HCStringContains.h"
+i"HCStringEndsWith.h"
+i"HCStringStartsWith.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest-iPhone.framework/OCHamcrest-iPhone
+c000000004CE71F0C0000000000133204
+t1290215180
+s1257988
+
+N/Users/ehanson/Development/Expectacular/Externals/OCMock-iPhone.framework/Headers/NSNotificationCenter+OCMAdditions.h
+c000000004CE71F0E000000000000021E
+t1290215182
+s542
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/OCMock-iPhone.framework/Headers/OCMArg.h
+c000000004CE71F0E000000000000034F
+t1290215182
+s847
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/OCMock-iPhone.framework/Headers/OCMConstraint.h
+c000000004CE71F0E0000000000000596
+t1290215182
+s1430
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/OCMock-iPhone.framework/Headers/OCMock.h
+c000000004CE71F0E000000000000019C
+t1290215182
+s412
+i"OCMockObject.h"
+i"OCMockRecorder.h"
+i"OCMConstraint.h"
+i"OCMArg.h"
+i"NSNotificationCenter+OCMAdditions.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCMock-iPhone.framework/Headers/OCMockObject.h
+c000000004CE71F0E00000000000003E1
+t1290215182
+s993
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/OCMock-iPhone.framework/Headers/OCMockRecorder.h
+c000000004CE71F0E000000000000038C
+t1290215182
+s908
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/OCMock-iPhone.framework/OCMock-iPhone
+c000000004CE71F0E00000000000C3A94
+t1290215182
+s801428
+
+N/Users/ehanson/Development/Expectacular/Spec/UI/Views/MyViewSpec.m
+c000000004CE71F0E00000000000002A3
+t1290215182
+s675
+i<Cedar-iPhone/SpecHelper.h>
+i<OCHamcrest-iPhone/OCHamcrest.h>
+i<OCMock-iPhone/OCMock.h>
+i"MyView.h"
+
+N/Users/ehanson/Development/Expectacular/Spec/UI/main.m
+c000000004CE71F0E0000000000000182
+t1290215182
+s386
+i<UIKit/UIKit.h>
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/Expect.o
+t1290217899
+s8948
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/ExpectacularFailure.o
+t1290217899
+s7880
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/MyView.o
+t1290217899
+s9744
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/MyViewSpec.o
+t1290217899
+s18080
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/UISpecs.LinkFileList
+c000000004CE729A800000000000002A3
+t1290217896
+s675
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/main.o
+t1290217899
+s6488
+
+N/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app
+t1290217900
+s170
+
+N/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app.dSYM
+t1290217900
+s102
+
+N/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/Info.plist
+t1290217896
+s467
+
+N/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/PkgInfo
+t1290217896
+s8
+
+N/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/UISpecs
+t1290217900
+s222176
+
+N/var/folders/a0/a0Dfg1I-HVaolVzMIk2EHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UIKit-dkhjzandfeqahqagfaydizvrdwpm/UIKit.h.gch
+t1290217899
+s13530992
+
+NUISpecs-Info.plist
+c000000004CE71F0E000000000000027A
+t1290215182
+s634
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies311910696#311910696#0(0"0(0#1#0"6071224298893821952#0"0#
+
+CCompileC build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/Expect.o /Users/ehanson/Development/Expectacular/App/Domain/Models/Expect.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311910699.410780
+e311910699.597040
+r1
+xCompileC
+xbuild/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/Expect.o
+x/Users/ehanson/Development/Expectacular/App/Domain/Models/Expect.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/ehanson/Development/Expectacular/App/Domain/Models/Expect.m311910699#311910699#0(0"0(0#0#66"/Users/ehanson/Development/Expectacular/App/Domain/Models/Expect.m4654537824#2454"    cd /Users/ehanson/Development/Expectacular    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/ehanson/bin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/amazon-autoscaling/bin:/usr/local/amazon-ec2/bin:/usr/local/amazon-loadbalancing/bin:/usr/local/amazon-cloudwatch/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/Users/ehanson/Development/android-sdk-mac/tools/:/usr/local/git/bin:/opt/local/lib/postgresql83/bin/"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-generated-files.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-own-target-headers.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-all-target-headers.hmap -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-project-headers.hmap -F/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator -F/Users/ehanson/Development/Expectacular/Externals -I/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/include -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/DerivedSources/i386 -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/DerivedSources -include /var/folders/a0/a0Dfg1I-HVaolVzMIk2EHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UIKit-dkhjzandfeqahqagfaydizvrdwpm/UIKit.h -c /Users/ehanson/Development/Expectacular/App/Domain/Models/Expect.m -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/Expect.o0#
+
+CCompileC build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/ExpectacularFailure.o /Users/ehanson/Development/Expectacular/App/Domain/Models/ExpectacularFailure.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311910699.597230
+e311910699.666813
+r1
+xCompileC
+xbuild/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/ExpectacularFailure.o
+x/Users/ehanson/Development/Expectacular/App/Domain/Models/ExpectacularFailure.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/ehanson/Development/Expectacular/App/Domain/Models/ExpectacularFailure.m311910699#311910699#0(0"0(0#0#79"/Users/ehanson/Development/Expectacular/App/Domain/Models/ExpectacularFailure.m4310575184#2480"    cd /Users/ehanson/Development/Expectacular    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/ehanson/bin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/amazon-autoscaling/bin:/usr/local/amazon-ec2/bin:/usr/local/amazon-loadbalancing/bin:/usr/local/amazon-cloudwatch/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/Users/ehanson/Development/android-sdk-mac/tools/:/usr/local/git/bin:/opt/local/lib/postgresql83/bin/"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-generated-files.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-own-target-headers.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-all-target-headers.hmap -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-project-headers.hmap -F/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator -F/Users/ehanson/Development/Expectacular/Externals -I/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/include -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/DerivedSources/i386 -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/DerivedSources -include /var/folders/a0/a0Dfg1I-HVaolVzMIk2EHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UIKit-dkhjzandfeqahqagfaydizvrdwpm/UIKit.h -c /Users/ehanson/Development/Expectacular/App/Domain/Models/ExpectacularFailure.m -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/ExpectacularFailure.o0#
+
+CCompileC build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/MyView.o /Users/ehanson/Development/Expectacular/App/UI/Views/MyView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311910699.322161
+e311910699.410591
+r1
+xCompileC
+xbuild/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/MyView.o
+x/Users/ehanson/Development/Expectacular/App/UI/Views/MyView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/ehanson/Development/Expectacular/App/UI/Views/MyView.m311910699#311910699#0(0"0(0#0#61"/Users/ehanson/Development/Expectacular/App/UI/Views/MyView.m4648090656#2449"    cd /Users/ehanson/Development/Expectacular    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/ehanson/bin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/amazon-autoscaling/bin:/usr/local/amazon-ec2/bin:/usr/local/amazon-loadbalancing/bin:/usr/local/amazon-cloudwatch/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/Users/ehanson/Development/android-sdk-mac/tools/:/usr/local/git/bin:/opt/local/lib/postgresql83/bin/"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-generated-files.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-own-target-headers.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-all-target-headers.hmap -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-project-headers.hmap -F/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator -F/Users/ehanson/Development/Expectacular/Externals -I/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/include -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/DerivedSources/i386 -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/DerivedSources -include /var/folders/a0/a0Dfg1I-HVaolVzMIk2EHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UIKit-dkhjzandfeqahqagfaydizvrdwpm/UIKit.h -c /Users/ehanson/Development/Expectacular/App/UI/Views/MyView.m -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/MyView.o0#
+
+CCompileC build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/MyViewSpec.o /Users/ehanson/Development/Expectacular/Spec/UI/Views/MyViewSpec.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311910699.395509
+e311910699.694564
+r1
+xCompileC
+xbuild/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/MyViewSpec.o
+x/Users/ehanson/Development/Expectacular/Spec/UI/Views/MyViewSpec.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/ehanson/Development/Expectacular/Spec/UI/Views/MyViewSpec.m311910699#311910699#0(0"0(0#0#66"/Users/ehanson/Development/Expectacular/Spec/UI/Views/MyViewSpec.m4648051536#2458"    cd /Users/ehanson/Development/Expectacular    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/ehanson/bin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/amazon-autoscaling/bin:/usr/local/amazon-ec2/bin:/usr/local/amazon-loadbalancing/bin:/usr/local/amazon-cloudwatch/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/Users/ehanson/Development/android-sdk-mac/tools/:/usr/local/git/bin:/opt/local/lib/postgresql83/bin/"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-generated-files.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-own-target-headers.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-all-target-headers.hmap -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-project-headers.hmap -F/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator -F/Users/ehanson/Development/Expectacular/Externals -I/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/include -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/DerivedSources/i386 -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/DerivedSources -include /var/folders/a0/a0Dfg1I-HVaolVzMIk2EHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UIKit-dkhjzandfeqahqagfaydizvrdwpm/UIKit.h -c /Users/ehanson/Development/Expectacular/Spec/UI/Views/MyViewSpec.m -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/MyViewSpec.o0#
+
+CCompileC build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/main.o /Users/ehanson/Development/Expectacular/Spec/UI/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311910699.323854
+e311910699.395233
+r1
+xCompileC
+xbuild/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/main.o
+x/Users/ehanson/Development/Expectacular/Spec/UI/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@62"Compile /Users/ehanson/Development/Expectacular/Spec/UI/main.m311910699#311910699#0(0"0(0#0#54"/Users/ehanson/Development/Expectacular/Spec/UI/main.m4648151136#2440"    cd /Users/ehanson/Development/Expectacular    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/ehanson/bin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/amazon-autoscaling/bin:/usr/local/amazon-ec2/bin:/usr/local/amazon-loadbalancing/bin:/usr/local/amazon-cloudwatch/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/Users/ehanson/Development/android-sdk-mac/tools/:/usr/local/git/bin:/opt/local/lib/postgresql83/bin/"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-generated-files.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-own-target-headers.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-all-target-headers.hmap -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-project-headers.hmap -F/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator -F/Users/ehanson/Development/Expectacular/Externals -I/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/include -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/DerivedSources/i386 -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/DerivedSources -include /var/folders/a0/a0Dfg1I-HVaolVzMIk2EHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UIKit-dkhjzandfeqahqagfaydizvrdwpm/UIKit.h -c /Users/ehanson/Development/Expectacular/Spec/UI/main.m -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/main.o0#
+
+CGenerateDSYMFile /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app.dSYM /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/UISpecs
+s311910700.313260
+e311910700.426308
+r1
+xGenerateDSYMFile
+x/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app.dSYM
+x/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/UISpecs
+lSLF07#2@113"GenerateDSYMFile build/Release-iphonesimulator/UISpecs.app.dSYM build/Release-iphonesimulator/UISpecs.app/UISpecs311910700#311910700#0(0"0(0#0#89"/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/UISpecs4655073904#754"    cd /Users/ehanson/Development/Expectacular    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/ehanson/bin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/amazon-autoscaling/bin:/usr/local/amazon-ec2/bin:/usr/local/amazon-loadbalancing/bin:/usr/local/amazon-cloudwatch/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/Users/ehanson/Development/android-sdk-mac/tools/:/usr/local/git/bin:/opt/local/lib/postgresql83/bin/"    /Developer/usr/bin/dsymutil /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/UISpecs -o /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app.dSYM0#
+
+CLd /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/UISpecs normal i386
+s311910699.694675
+e311910700.313062
+r1
+xLd
+x/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/UISpecs
+xnormal
+xi386
+lSLF07#2@94"Link /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/UISpecs311910699#311910700#0(0"0(0#0#0"4648134960#1403"    cd /Users/ehanson/Development/Expectacular    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/ehanson/bin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/amazon-autoscaling/bin:/usr/local/amazon-ec2/bin:/usr/local/amazon-loadbalancing/bin:/usr/local/amazon-cloudwatch/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/Users/ehanson/Development/android-sdk-mac/tools/:/usr/local/git/bin:/opt/local/lib/postgresql83/bin/"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -L/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator -F/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator -F/Users/ehanson/Development/Expectacular/Externals -filelist /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/Objects-normal/i386/UISpecs.LinkFileList -mmacosx-version-min=10.5 -ObjC -lstdc++ -framework Foundation -framework UIKit -Xlinker -objc_abi_version -Xlinker 2 -framework Cedar-iPhone -framework OCHamcrest-iPhone -framework OCMock-iPhone -o /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/UISpecs0#
+
+CProcessInfoPlistFile /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/Info.plist UISpecs-Info.plist
+s311910696.679639
+e311910696.709907
+r1
+xProcessInfoPlistFile
+x/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/Info.plist
+xUISpecs-Info.plist
+lSLF07#2@26"Process UISpecs-Info.plist311910696#311910696#0(0"0(0#0#58"/Users/ehanson/Development/Expectacular/UISpecs-Info.plist29555065834766452#850"    cd /Users/ehanson/Development/Expectacular    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/ehanson/bin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/amazon-autoscaling/bin:/usr/local/amazon-ec2/bin:/usr/local/amazon-loadbalancing/bin:/usr/local/amazon-cloudwatch/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/Users/ehanson/Development/android-sdk-mac/tools/:/usr/local/git/bin:/opt/local/lib/postgresql83/bin/"    builtin-infoPlistUtility UISpecs-Info.plist -genpkginfo /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app/Info.plist0#
+
+CProcessPCH /var/folders/a0/a0Dfg1I-HVaolVzMIk2EHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UIKit-dkhjzandfeqahqagfaydizvrdwpm/UIKit.h.gch /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
+s311910696.732147
+e311910699.321806
+r1
+xProcessPCH
+x/var/folders/a0/a0Dfg1I-HVaolVzMIk2EHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UIKit-dkhjzandfeqahqagfaydizvrdwpm/UIKit.h.gch
+x/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@152"Precompile /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h311910696#311910699#0(0"0(0#0#141"/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h4654566000#2399"    cd /Users/ehanson/Development/Expectacular    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/ehanson/bin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/amazon-autoscaling/bin:/usr/local/amazon-ec2/bin:/usr/local/amazon-loadbalancing/bin:/usr/local/amazon-cloudwatch/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/Users/ehanson/Development/android-sdk-mac/tools/:/usr/local/git/bin:/opt/local/lib/postgresql83/bin/"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-generated-files.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-own-target-headers.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-all-target-headers.hmap -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/UISpecs-project-headers.hmap -F/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator -F/Users/ehanson/Development/Expectacular/Externals -I/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/include -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/DerivedSources/i386 -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release-iphonesimulator/UISpecs.build/DerivedSources -c /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h -o /var/folders/a0/a0Dfg1I-HVaolVzMIk2EHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UIKit-dkhjzandfeqahqagfaydizvrdwpm/UIKit.h.gch0#
+
+CTouch /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app
+s311910700.426470
+e311910700.457521
+r1
+xTouch
+x/Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app
+lSLF07#2@87"Touch /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app311910700#311910700#0(0"0(0#0#0"4648003648#646"    cd /Users/ehanson/Development/Expectacular    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/ehanson/bin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/amazon-autoscaling/bin:/usr/local/amazon-ec2/bin:/usr/local/amazon-loadbalancing/bin:/usr/local/amazon-cloudwatch/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/Users/ehanson/Development/android-sdk-mac/tools/:/usr/local/git/bin:/opt/local/lib/postgresql83/bin/"    /usr/bin/touch -c /Users/ehanson/Development/Expectacular/build/Release-iphonesimulator/UISpecs.app0#
+

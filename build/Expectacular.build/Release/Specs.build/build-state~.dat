@@ -1,0 +1,714 @@
+TSpecs
+v7
+r0
+t311908099.876437
+cCheck dependencies
+cCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/main.o /Users/ehanson/Development/Expectacular/Spec/Domain/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/MyModelSpec.o /Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/MyModel.o /Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/i386/main.o /Users/ehanson/Development/Expectacular/Spec/Domain/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/Specs normal x86_64
+cCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/i386/MyModelSpec.o /Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/i386/MyModel.o /Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/main.o /Users/ehanson/Development/Expectacular/Spec/Domain/main.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cLd /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/i386/Specs normal i386
+cCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/MyModelSpec.o /Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/MyModel.o /Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cLd /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/Specs normal ppc
+cCreateUniversalBinary /Users/ehanson/Development/Expectacular/build/Release/Specs normal "x86_64 i386 ppc"
+cGenerateDSYMFile /Users/ehanson/Development/Expectacular/build/Release/Specs.dSYM /Users/ehanson/Development/Expectacular/build/Release/Specs
+cPBXCp build/Release/Cedar.framework Externals/Cedar.framework
+cPBXCp build/Release/OCHamcrest.framework Externals/OCHamcrest.framework
+cPBXCp build/Release/OCMock.framework Externals/OCMock.framework
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004CAA740B00000000000000EE
+t1286239243
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C23AA0400000000000013E6
+t1277405700
+s5094
+
+N/Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.h
+c000000004CE71F0C00000000000000ED
+t1290215180
+s237
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m
+c000000004CE71F0C00000000000000EB
+t1290215180
+s235
+i"MyModel.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar-iPhone.framework/Headers/CDRExampleReporter.h
+c000000004CE71F0C00000000000000AB
+t1290215180
+s171
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar-iPhone.framework/Headers/CDRExampleReporterViewController.h
+c000000004CE71F0C000000000000009C
+t1290215180
+s156
+i<UIKit/UIKit.h>
+i"CDRExampleReporter.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar-iPhone.framework/Headers/CDRFunctions.h
+c000000004CE71F0C00000000000000FA
+t1290215180
+s250
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar-iPhone.framework/Headers/CedarApplicationDelegate.h
+c000000004CE71F0C00000000000000E2
+t1290215180
+s226
+i<UIKit/UIKit.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar.framework
+c000000004CE71F0C00000000000000CC
+t1290215180
+s204
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar.framework/Cedar
+c000000004CE71F0C00000000000236F8
+t1290215180
+s145144
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar.framework/Headers/CDRExampleBase.h
+c000000004CE71F0C0000000000000379
+t1290215180
+s889
+i<Foundation/Foundation.h>
+i"CDRExampleParent.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar.framework/Headers/CDRExampleParent.h
+c000000004CE71F0C000000000000009E
+t1290215180
+s158
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar.framework/Headers/CDRFunctions.h
+c000000004CE71F0C00000000000000FA
+t1290215180
+s250
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar.framework/Headers/CDRSharedExampleGroupPool.h
+c000000004CE71F0C00000000000003F8
+t1290215180
+s1016
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar.framework/Headers/CDRSpec.h
+c000000004CE71F0C00000000000003C1
+t1290215180
+s961
+i<Foundation/Foundation.h>
+i"CDRExampleBase.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar.framework/Headers/Cedar.h
+c000000004CE71F0C00000000000000D3
+t1290215180
+s211
+i<Cedar-iPhone/CDRFunctions.h>
+i<Cedar-iPhone/CedarApplicationDelegate.h>
+i<Cedar-iPhone/CDRExampleReporterViewController.h>
+i<Cedar/CDRFunctions.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/Cedar.framework/Headers/SpecHelper.h
+c000000004CE71F0C0000000000000100
+t1290215180
+s256
+i"CDRSpec.h"
+i"CDRSharedExampleGroupPool.h"
+i"CDRExampleParent.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework
+c000000004CE71F0C00000000000000CC
+t1290215180
+s204
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCAllOf.h
+c000000004CE71F0C0000000000000395
+t1290215180
+s917
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCAnyOf.h
+c000000004CE71F0D0000000000000395
+t1290215181
+s917
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCBaseMatcher.h
+c000000004CE71F0E000000000000024E
+t1290215182
+s590
+i<Foundation/Foundation.h>
+i"HCMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCDescribedAs.h
+c000000004CE71F0E00000000000004A2
+t1290215182
+s1186
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCHasDescription.h
+c000000004CE71F0E0000000000000338
+t1290215182
+s824
+i"HCInvocationMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCInvocationMatcher.h
+c000000004CE71F0E0000000000000363
+t1290215182
+s867
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCIs.h
+c000000004CE71F0E00000000000003EA
+t1290215182
+s1002
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCIsAnything.h
+c000000004CE71F0E000000000000044E
+t1290215182
+s1102
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCIsCloseTo.h
+c000000004CE71F0E000000000000032E
+t1290215182
+s814
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCIsCollectionContaining.h
+c000000004CE71F0E0000000000000369
+t1290215182
+s873
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCIsCollectionOnlyContaining.h
+c000000004CE71F0E000000000000051D
+t1290215182
+s1309
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCIsDictionaryContaining.h
+c000000004CE71F0E000000000000033B
+t1290215182
+s827
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCIsDictionaryContainingKey.h
+c000000004CE71F0E0000000000000290
+t1290215182
+s656
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCIsDictionaryContainingValue.h
+c000000004CE71F0E00000000000002A8
+t1290215182
+s680
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCIsEqual.h
+c000000004CE71F0E00000000000002C4
+t1290215182
+s708
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCIsEqualIgnoringCase.h
+c000000004CE71F0E00000000000002DC
+t1290215182
+s732
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCIsEqualIgnoringWhiteSpace.h
+c000000004CE71F0E0000000000000338
+t1290215182
+s824
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCIsEqualToNumber.h
+c000000004CE71F0E0000000000001113
+t1290215182
+s4371
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCIsIn.h
+c000000004CE71F0E000000000000021F
+t1290215182
+s543
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCIsInstanceOf.h
+c000000004CE71F0E00000000000002CC
+t1290215182
+s716
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCIsNil.h
+c000000004CE71F0E00000000000002DC
+t1290215182
+s732
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCIsNot.h
+c000000004CE71F0E000000000000033E
+t1290215182
+s830
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCIsSame.h
+c000000004CE71F0E00000000000002B0
+t1290215182
+s688
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCMatcher.h
+c000000004CE71F0E0000000000000686
+t1290215182
+s1670
+i"HCSelfDescribing.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCMatcherAssert.h
+c000000004CE71F0E00000000000002BA
+t1290215182
+s698
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCNumberAssert.h
+c000000004CE71F0E000000000000206E
+t1290215182
+s8302
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCOrderingComparison.h
+c000000004CE71F0E00000000000005DD
+t1290215182
+s1501
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCSelfDescribing.h
+c000000004CE71F0E0000000000000274
+t1290215182
+s628
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCStringContains.h
+c000000004CE71F0E0000000000000286
+t1290215182
+s646
+i"HCSubstringMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCStringEndsWith.h
+c000000004CE71F0E000000000000026F
+t1290215182
+s623
+i"HCSubstringMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCStringStartsWith.h
+c000000004CE71F0E0000000000000281
+t1290215182
+s641
+i"HCSubstringMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/HCSubstringMatcher.h
+c000000004CE71F0E000000000000012D
+t1290215182
+s301
+i"HCBaseMatcher.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/Headers/OCHamcrest.h
+c000000004CE71F0E0000000000000402
+t1290215182
+s1026
+i"HCMatcherAssert.h"
+i"HCNumberAssert.h"
+i"HCAllOf.h"
+i"HCAnyOf.h"
+i"HCDescribedAs.h"
+i"HCIs.h"
+i"HCIsAnything.h"
+i"HCIsEqual.h"
+i"HCIsInstanceOf.h"
+i"HCIsNil.h"
+i"HCIsNot.h"
+i"HCIsSame.h"
+i"HCIsCollectionContaining.h"
+i"HCIsCollectionOnlyContaining.h"
+i"HCIsDictionaryContaining.h"
+i"HCIsDictionaryContainingKey.h"
+i"HCIsDictionaryContainingValue.h"
+i"HCIsIn.h"
+i"HCIsCloseTo.h"
+i"HCIsEqualToNumber.h"
+i"HCOrderingComparison.h"
+i"HCHasDescription.h"
+i"HCIsEqualIgnoringCase.h"
+i"HCIsEqualIgnoringWhiteSpace.h"
+i"HCStringContains.h"
+i"HCStringEndsWith.h"
+i"HCStringStartsWith.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework/OCHamcrest
+c000000004CE71F0E000000000004D900
+t1290215182
+s317696
+
+N/Users/ehanson/Development/Expectacular/Externals/OCMock.framework
+c000000004CE71F0E00000000000000CC
+t1290215182
+s204
+
+N/Users/ehanson/Development/Expectacular/Externals/OCMock.framework/Headers/NSNotificationCenter+OCMAdditions.h
+c000000004CE71F0E000000000000021E
+t1290215182
+s542
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/OCMock.framework/Headers/OCMArg.h
+c000000004CE71F0E000000000000034F
+t1290215182
+s847
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/OCMock.framework/Headers/OCMConstraint.h
+c000000004CE71F0E0000000000000596
+t1290215182
+s1430
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/OCMock.framework/Headers/OCMock.h
+c000000004CE71F0E000000000000019C
+t1290215182
+s412
+i"OCMockObject.h"
+i"OCMockRecorder.h"
+i"OCMConstraint.h"
+i"OCMArg.h"
+i"NSNotificationCenter+OCMAdditions.h"
+
+N/Users/ehanson/Development/Expectacular/Externals/OCMock.framework/Headers/OCMockObject.h
+c000000004CE71F0E00000000000003E1
+t1290215182
+s993
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/OCMock.framework/Headers/OCMockRecorder.h
+c000000004CE71F0E000000000000038C
+t1290215182
+s908
+i<Foundation/Foundation.h>
+
+N/Users/ehanson/Development/Expectacular/Externals/OCMock.framework/OCMock
+c000000004CE71F0E000000000003277C
+t1290215182
+s206716
+
+N/Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m
+c000000004CE71F0E0000000000000239
+t1290215182
+s569
+i<Cedar/SpecHelper.h>
+i<OCHamcrest/OCHamcrest.h>
+i<OCMock/OCMock.h>
+i"MyModel.h"
+
+N/Users/ehanson/Development/Expectacular/Spec/Domain/main.m
+c000000004CE71F0E00000000000000E8
+t1290215182
+s232
+i<Cedar/Cedar.h>
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/i386/MyModel.o
+t1290215297
+s5748
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/i386/MyModelSpec.o
+t1290215297
+s13016
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/i386/Specs
+t1290215297
+s16664
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/i386/Specs.LinkFileList
+c000000004CE71F7E000000000000015A
+t1290215294
+s346
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/i386/main.o
+t1290215296
+s4860
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/MyModel.o
+t1290215299
+s5808
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/MyModelSpec.o
+t1290215298
+s13520
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/Specs
+t1290215299
+s16172
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/Specs.LinkFileList
+c000000004CE71F7E0000000000000157
+t1290215294
+s343
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/main.o
+t1290215298
+s4892
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/MyModel.o
+t1290215296
+s6852
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/MyModelSpec.o
+t1290215295
+s18624
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/Specs
+t1290215296
+s17784
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/Specs.LinkFileList
+c000000004CE71F7E0000000000000160
+t1290215294
+s352
+
+N/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/main.o
+t1290215295
+s5064
+
+N/Users/ehanson/Development/Expectacular/build/Release/Cedar.framework
+t1290215299
+s204
+
+N/Users/ehanson/Development/Expectacular/build/Release/OCHamcrest.framework
+t1290215299
+s204
+
+N/Users/ehanson/Development/Expectacular/build/Release/OCMock.framework
+t1290215299
+s204
+
+N/Users/ehanson/Development/Expectacular/build/Release/Specs
+t1290215299
+s61228
+
+N/Users/ehanson/Development/Expectacular/build/Release/Specs.dSYM
+t1290215299
+s102
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies311908094#311908095#0(0"0(0#1#0"5713190241827112960#0"0#
+
+CCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/i386/MyModel.o /Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311908096.476933
+e311908097.116186
+r1
+xCompileC
+xbuild/Expectacular.build/Release/Specs.build/Objects-normal/i386/MyModel.o
+x/Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m311908096#311908097#0(0"0(0#0#67"/Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m3704544311026479616#1450"    cd /Users/ehanson/Development/Expectacular    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-generated-files.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-own-target-headers.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-all-target-headers.hmap -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-project-headers.hmap -F/Users/ehanson/Development/Expectacular/build/Release -F/Users/ehanson/Development/Expectacular/Externals -F/Users/ehanson/Development/Expectacular -I/Users/ehanson/Development/Expectacular/build/Release/include -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources/i386 -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources -c /Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/i386/MyModel.o0#
+
+CCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/i386/MyModelSpec.o /Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311908096.412353
+e311908097.100185
+r1
+xCompileC
+xbuild/Expectacular.build/Release/Specs.build/Objects-normal/i386/MyModelSpec.o
+x/Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m311908096#311908097#0(0"0(0#0#72"/Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m4649281616#1459"    cd /Users/ehanson/Development/Expectacular    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-generated-files.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-own-target-headers.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-all-target-headers.hmap -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-project-headers.hmap -F/Users/ehanson/Development/Expectacular/build/Release -F/Users/ehanson/Development/Expectacular/Externals -F/Users/ehanson/Development/Expectacular -I/Users/ehanson/Development/Expectacular/build/Release/include -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources/i386 -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources -c /Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/i386/MyModelSpec.o0#
+
+CCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/i386/main.o /Users/ehanson/Development/Expectacular/Spec/Domain/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311908095.727935
+e311908096.412176
+r1
+xCompileC
+xbuild/Expectacular.build/Release/Specs.build/Objects-normal/i386/main.o
+x/Users/ehanson/Development/Expectacular/Spec/Domain/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/ehanson/Development/Expectacular/Spec/Domain/main.m311908095#311908096#0(0"0(0#0#58"/Users/ehanson/Development/Expectacular/Spec/Domain/main.m4655632384#1438"    cd /Users/ehanson/Development/Expectacular    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-generated-files.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-own-target-headers.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-all-target-headers.hmap -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-project-headers.hmap -F/Users/ehanson/Development/Expectacular/build/Release -F/Users/ehanson/Development/Expectacular/Externals -F/Users/ehanson/Development/Expectacular -I/Users/ehanson/Development/Expectacular/build/Release/include -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources/i386 -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources -c /Users/ehanson/Development/Expectacular/Spec/Domain/main.m -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/i386/main.o0#
+
+CCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/MyModel.o /Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s311908098.867028
+e311908099.392396
+r1
+xCompileC
+xbuild/Expectacular.build/Release/Specs.build/Objects-normal/ppc/MyModel.o
+x/Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m311908098#311908099#0(0"0(0#0#67"/Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m4649228560#1457"    cd /Users/ehanson/Development/Expectacular    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-generated-files.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-own-target-headers.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-all-target-headers.hmap -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-project-headers.hmap -F/Users/ehanson/Development/Expectacular/build/Release -F/Users/ehanson/Development/Expectacular/Externals -F/Users/ehanson/Development/Expectacular -I/Users/ehanson/Development/Expectacular/build/Release/include -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources/ppc -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources -c /Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/MyModel.o0#
+
+CCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/MyModelSpec.o /Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s311908097.691006
+e311908098.866782
+r1
+xCompileC
+xbuild/Expectacular.build/Release/Specs.build/Objects-normal/ppc/MyModelSpec.o
+x/Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m311908097#311908098#0(0"0(0#0#72"/Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m4649214720#1466"    cd /Users/ehanson/Development/Expectacular    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-generated-files.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-own-target-headers.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-all-target-headers.hmap -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-project-headers.hmap -F/Users/ehanson/Development/Expectacular/build/Release -F/Users/ehanson/Development/Expectacular/Externals -F/Users/ehanson/Development/Expectacular -I/Users/ehanson/Development/Expectacular/build/Release/include -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources/ppc -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources -c /Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/MyModelSpec.o0#
+
+CCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/main.o /Users/ehanson/Development/Expectacular/Spec/Domain/main.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s311908097.100492
+e311908098.935294
+r1
+xCompileC
+xbuild/Expectacular.build/Release/Specs.build/Objects-normal/ppc/main.o
+x/Users/ehanson/Development/Expectacular/Spec/Domain/main.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/ehanson/Development/Expectacular/Spec/Domain/main.m311908097#311908098#0(0"0(0#0#58"/Users/ehanson/Development/Expectacular/Spec/Domain/main.m4646593760#1445"    cd /Users/ehanson/Development/Expectacular    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-generated-files.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-own-target-headers.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-all-target-headers.hmap -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-project-headers.hmap -F/Users/ehanson/Development/Expectacular/build/Release -F/Users/ehanson/Development/Expectacular/Externals -F/Users/ehanson/Development/Expectacular -I/Users/ehanson/Development/Expectacular/build/Release/include -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources/ppc -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources -c /Users/ehanson/Development/Expectacular/Spec/Domain/main.m -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/main.o0#
+
+CCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/MyModel.o /Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s311908095.663472
+e311908096.292989
+r1
+xCompileC
+xbuild/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/MyModel.o
+x/Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m311908095#311908096#0(0"0(0#0#67"/Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m4646637968#1456"    cd /Users/ehanson/Development/Expectacular    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-generated-files.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-own-target-headers.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-all-target-headers.hmap -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-project-headers.hmap -F/Users/ehanson/Development/Expectacular/build/Release -F/Users/ehanson/Development/Expectacular/Externals -F/Users/ehanson/Development/Expectacular -I/Users/ehanson/Development/Expectacular/build/Release/include -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources/x86_64 -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources -c /Users/ehanson/Development/Expectacular/App/Domain/Models/MyModel.m -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/MyModel.o0#
+
+CCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/MyModelSpec.o /Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s311908095.016082
+e311908095.727743
+r1
+xCompileC
+xbuild/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/MyModelSpec.o
+x/Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m311908095#311908095#0(0"0(0#0#72"/Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m4655029696#1465"    cd /Users/ehanson/Development/Expectacular    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-generated-files.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-own-target-headers.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-all-target-headers.hmap -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-project-headers.hmap -F/Users/ehanson/Development/Expectacular/build/Release -F/Users/ehanson/Development/Expectacular/Externals -F/Users/ehanson/Development/Expectacular -I/Users/ehanson/Development/Expectacular/build/Release/include -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources/x86_64 -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources -c /Users/ehanson/Development/Expectacular/Spec/Domain/Models/MyModelSpec.m -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/MyModelSpec.o0#
+
+CCompileC build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/main.o /Users/ehanson/Development/Expectacular/Spec/Domain/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s311908095.012611
+e311908095.663071
+r1
+xCompileC
+xbuild/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/main.o
+x/Users/ehanson/Development/Expectacular/Spec/Domain/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/ehanson/Development/Expectacular/Spec/Domain/main.m311908095#311908095#0(0"0(0#0#58"/Users/ehanson/Development/Expectacular/Spec/Domain/main.m4069054405866779136#1444"    cd /Users/ehanson/Development/Expectacular    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-generated-files.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-own-target-headers.hmap -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-all-target-headers.hmap -iquote /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Specs-project-headers.hmap -F/Users/ehanson/Development/Expectacular/build/Release -F/Users/ehanson/Development/Expectacular/Externals -F/Users/ehanson/Development/Expectacular -I/Users/ehanson/Development/Expectacular/build/Release/include -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources/x86_64 -I/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/DerivedSources -c /Users/ehanson/Development/Expectacular/Spec/Domain/main.m -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/main.o0#
+
+CCreateUniversalBinary /Users/ehanson/Development/Expectacular/build/Release/Specs normal "x86_64 i386 ppc"
+s311908099.669528
+e311908099.721327
+r1
+xCreateUniversalBinary
+x/Users/ehanson/Development/Expectacular/build/Release/Specs
+xnormal
+xx86_64 i386 ppc
+lSLF07#2@66"CreateUniversalBinary build/Release/Specs normal "x86_64 i386 ppc"311908099#311908099#0(0"0(0#0#55"/Users/ehanson/Development/Expectacular/x86_64 i386 ppc4646440016#475"    cd /Users/ehanson/Development/Expectacular    /usr/bin/lipo -create /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/Specs /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/i386/Specs /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/Specs -output /Users/ehanson/Development/Expectacular/build/Release/Specs0#
+
+CGenerateDSYMFile /Users/ehanson/Development/Expectacular/build/Release/Specs.dSYM /Users/ehanson/Development/Expectacular/build/Release/Specs
+s311908099.721511
+e311908099.737198
+r1
+xGenerateDSYMFile
+x/Users/ehanson/Development/Expectacular/build/Release/Specs.dSYM
+x/Users/ehanson/Development/Expectacular/build/Release/Specs
+lSLF07#2@61"GenerateDSYMFile build/Release/Specs.dSYM build/Release/Specs311908099#311908099#0(0"0(0#0#59"/Users/ehanson/Development/Expectacular/build/Release/Specs4648668320#207"    cd /Users/ehanson/Development/Expectacular    /Developer/usr/bin/dsymutil /Users/ehanson/Development/Expectacular/build/Release/Specs -o /Users/ehanson/Development/Expectacular/build/Release/Specs.dSYM0#
+
+CLd /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/i386/Specs normal i386
+s311908097.116386
+e311908097.690795
+r1
+xLd
+x/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/i386/Specs
+xnormal
+xi386
+old: warning: directory '/Users/ehanson/Development/Expectacular/build/Release' following -L not found
+old: warning: directory '/Users/ehanson/Development/Expectacular/build/Release' following -F not found
+lSLF07#2@115"Link /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/i386/Specs311908097#311908097#0(204"ld: warning: directory '/Users/ehanson/Development/Expectacular/build/Release' following -L not foundld: warning: directory '/Users/ehanson/Development/Expectacular/build/Release' following -F not found2(22@88"Directory '/Users/ehanson/Development/Expectacular/build/Release' following -L not found311908097#0#102#0(6@0"311908097#0#0#0#0#0"0(22@88"Directory '/Users/ehanson/Development/Expectacular/build/Release' following -F not found311908097#102#102#0(6@0"311908097#0#0#0#0#0"0(0#0#0"4648580128#730"    cd /Users/ehanson/Development/Expectacular    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/ehanson/Development/Expectacular/build/Release -F/Users/ehanson/Development/Expectacular/build/Release -F/Users/ehanson/Development/Expectacular/Externals -F/Users/ehanson/Development/Expectacular -filelist /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/i386/Specs.LinkFileList -mmacosx-version-min=10.6 -framework Foundation -framework Cedar -framework OCHamcrest -framework OCMock -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/i386/Specs0#
+
+CLd /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/Specs normal ppc
+s311908099.392517
+e311908099.669340
+r1
+xLd
+x/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/Specs
+xnormal
+xppc
+old: warning: directory '/Users/ehanson/Development/Expectacular/build/Release' following -L not found
+old: warning: directory '/Users/ehanson/Development/Expectacular/build/Release' following -F not found
+lSLF07#2@114"Link /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/Specs311908099#311908099#0(204"ld: warning: directory '/Users/ehanson/Development/Expectacular/build/Release' following -L not foundld: warning: directory '/Users/ehanson/Development/Expectacular/build/Release' following -F not found2(22@88"Directory '/Users/ehanson/Development/Expectacular/build/Release' following -L not found311908099#0#102#0(6@0"311908099#0#0#0#0#0"0(22@88"Directory '/Users/ehanson/Development/Expectacular/build/Release' following -F not found311908099#102#102#0(6@0"311908099#0#0#0#0#0"0(0#0#0"4649213776#727"    cd /Users/ehanson/Development/Expectacular    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch ppc -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/ehanson/Development/Expectacular/build/Release -F/Users/ehanson/Development/Expectacular/build/Release -F/Users/ehanson/Development/Expectacular/Externals -F/Users/ehanson/Development/Expectacular -filelist /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/Specs.LinkFileList -mmacosx-version-min=10.6 -framework Foundation -framework Cedar -framework OCHamcrest -framework OCMock -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/ppc/Specs0#
+
+CLd /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/Specs normal x86_64
+s311908096.293177
+e311908096.476664
+r1
+xLd
+x/Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/Specs
+xnormal
+xx86_64
+old: warning: directory '/Users/ehanson/Development/Expectacular/build/Release' following -L not found
+old: warning: directory '/Users/ehanson/Development/Expectacular/build/Release' following -F not found
+lSLF07#2@117"Link /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/Specs311908096#311908096#0(204"ld: warning: directory '/Users/ehanson/Development/Expectacular/build/Release' following -L not foundld: warning: directory '/Users/ehanson/Development/Expectacular/build/Release' following -F not found2(22@88"Directory '/Users/ehanson/Development/Expectacular/build/Release' following -L not found311908096#0#102#0(6@0"311908096#0#0#0#0#0"0(22@88"Directory '/Users/ehanson/Development/Expectacular/build/Release' following -F not found311908096#102#102#0(6@0"311908096#0#0#0#0#0"0(0#0#0"4649334208#736"    cd /Users/ehanson/Development/Expectacular    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/ehanson/Development/Expectacular/build/Release -F/Users/ehanson/Development/Expectacular/build/Release -F/Users/ehanson/Development/Expectacular/Externals -F/Users/ehanson/Development/Expectacular -filelist /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/Specs.LinkFileList -mmacosx-version-min=10.6 -framework Foundation -framework Cedar -framework OCHamcrest -framework OCMock -o /Users/ehanson/Development/Expectacular/build/Expectacular.build/Release/Specs.build/Objects-normal/x86_64/Specs0#
+
+CPBXCp build/Release/Cedar.framework Externals/Cedar.framework
+s311908099.737348
+e311908099.870111
+r1
+xPBXCp
+xbuild/Release/Cedar.framework
+xExternals/Cedar.framework
+lSLF07#2@30"Copy Externals/Cedar.framework311908099#311908099#0(0"0(0#0#65"/Users/ehanson/Development/Expectacular/Externals/Cedar.framework4648704928#350"    cd /Users/ehanson/Development/Expectacular    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/ehanson/Development/Expectacular/Externals/Cedar.framework /Users/ehanson/Development/Expectacular/build/Release0#
+
+CPBXCp build/Release/OCHamcrest.framework Externals/OCHamcrest.framework
+s311908099.738253
+e311908099.876353
+r1
+xPBXCp
+xbuild/Release/OCHamcrest.framework
+xExternals/OCHamcrest.framework
+lSLF07#2@35"Copy Externals/OCHamcrest.framework311908099#311908099#0(0"0(0#0#70"/Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework4655262112#355"    cd /Users/ehanson/Development/Expectacular    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/ehanson/Development/Expectacular/Externals/OCHamcrest.framework /Users/ehanson/Development/Expectacular/build/Release0#
+
+CPBXCp build/Release/OCMock.framework Externals/OCMock.framework
+s311908099.739002
+e311908099.875776
+r1
+xPBXCp
+xbuild/Release/OCMock.framework
+xExternals/OCMock.framework
+lSLF07#2@31"Copy Externals/OCMock.framework311908099#311908099#0(0"0(0#0#66"/Users/ehanson/Development/Expectacular/Externals/OCMock.framework4646491536#351"    cd /Users/ehanson/Development/Expectacular    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/ehanson/Development/Expectacular/Externals/OCMock.framework /Users/ehanson/Development/Expectacular/build/Release0#
+
