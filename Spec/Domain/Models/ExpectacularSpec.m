@@ -1,11 +1,3 @@
-//
-//  ExpectacularSpec.m
-//  Expectacular
-//
-//  Created by Erik Hanson on 11/19/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import <Cedar-iPhone/SpecHelper.h>
 #define HC_SHORTHAND
 #import <OCHamcrest-iPhone/OCHamcrest.h>
@@ -15,6 +7,56 @@
 SPEC_BEGIN(ExpectacularSpec)
 
 describe(@"Expect", ^{
+    describe(@"block", ^{
+        describe(@"toThrow", ^{
+            it(@"should pass if the block throws", ^{
+                @try {
+                    void(^b)(void) = ^(void){ @throw [NSException exceptionWithName:@"e" reason:@"reason" userInfo:nil]; };
+                    [Expect block:b toThrowExceptionWithReason:@"reason"];
+                } @catch (id exception) {
+                    fail(@"should not have failed");
+                }
+            });
+            
+            it(@"should fail if the block does not throw", ^{
+                @try {
+                    [Expect block:^{} toThrowExceptionWithReason:@"reason"];
+                    fail(@"expected exception");
+                } @catch (id exception) {
+                    [Expect object:[exception reason] toEqual:@"expected block to throw exception with reason: reason"];
+                }                
+            });
+            
+            it(@"should fail if the block throws an exception with the wrong reason", ^{
+                @try {
+                    void(^b)(void) = ^(void){ @throw [NSException exceptionWithName:@"e" reason:@"some other reason" userInfo:nil]; };
+                    [Expect block:b toThrowExceptionWithReason:@"reason"];
+                } @catch (id exception) {
+                    [Expect object:[exception reason] toEqual:@"expected block to throw exception with reason: reason\nbut it threw exception with reason: some other reason"];
+                }
+            });
+        });
+        
+        describe(@"notToThrow", ^{
+            it(@"should pass if the block does not throw", ^{
+                @try {
+                    [Expect blockToNotThrowException:^{}];
+                } @catch (id exception) {
+                    fail(@"should not have failed");
+                }                
+            });
+            
+            it(@"should fail if the block does throw", ^{
+                @try {
+                    void(^b)(void) = ^(void){ @throw [NSException exceptionWithName:@"e" reason:@"reason" userInfo:nil]; };
+                    [Expect blockToNotThrowException:b];
+                    fail(@"expected exception");
+                } @catch (id exception) {
+                    [Expect object:[exception reason] toEqual:@"expected block to not throw exception\nbut it threw exception with reason: reason"];
+                }
+            });
+        });
+    });
     describe(@"object", ^{
         describe(@"toEqual", ^{
             it(@"should pass if both objects are equal", ^{

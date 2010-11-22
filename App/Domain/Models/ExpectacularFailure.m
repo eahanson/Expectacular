@@ -9,4 +9,15 @@
                                   userInfo:nil];
 }
 
++ (id)messageWithFormat:(NSString *)format, ... {
+    va_list vl;
+    va_start(vl, format);
+    NSString* formattedString = [[[NSString alloc] initWithFormat:format arguments:vl] autorelease];
+    va_end(vl);
+    
+    return [[self class] exceptionWithName:@"Expectation failed"
+                                    reason:formattedString
+                                  userInfo:nil];
+}
+
 @end

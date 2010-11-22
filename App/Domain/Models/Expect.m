@@ -29,5 +29,31 @@
     }
 }
 
++ (void)block:(void (^)())block toThrowExceptionWithReason:(NSString *)reason {
+    BOOL threw = NO;
+    
+    @try {
+        block();
+        threw = NO;
+    } @catch (id exception) {
+        threw = YES;
+        
+        if (![reason isEqual:[exception reason]]) {
+            @throw [ExpectacularFailure messageWithFormat:@"expected block to throw exception with reason: %@\nbut it threw exception with reason: %@", reason, [exception reason]];
+        }
+    }
+    
+    if (!threw) {
+        @throw [ExpectacularFailure messageWithFormat:@"expected block to throw exception with reason: %@", reason];
+    }
+}
+
++ (void)blockToNotThrowException:(void (^)())block {
+    @try {
+        block();
+    } @catch (id exception) {
+        @throw [ExpectacularFailure messageWithFormat:@"expected block to not throw exception\nbut it threw exception with reason: %@", [exception reason]];
+    }
+}
 
 @end
