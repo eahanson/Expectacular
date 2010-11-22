@@ -1,39 +1,37 @@
 #import "Expect.h"
 #import "ExpectacularFailure.h"
 
+@interface Expect (Private)
++ (void)intMatchesPredicate:(BOOL (^)())predicate expected:(int)expected matcher:(NSString *)matcher actual:(int)actual;
+@end
+
 @implementation Expect
 
 + (void)int:(int)expected toEqual:(int)actual {
-    if (expected != actual) {
-        @throw [ExpectacularFailure expected:[[NSNumber numberWithInt:expected] stringValue] 
-                                     matcher:@"to equal" 
-                                      actual:[[NSNumber numberWithInt:actual] stringValue]];
-    }
+    [Expect intMatchesPredicate:^BOOL{ return expected == actual; } expected:expected matcher:@"to equal" actual:actual];
+//    [Expect object:[NSNumber numberWithInt:expected] toEqual:[NSNumber numberWithInt:actual]];
 }
     
 + (void)int:(int)expected toNotEqual:(int)actual {
-    if (expected == actual) {
-        @throw [ExpectacularFailure expected:[[NSNumber numberWithInt:expected] stringValue]
-                                     matcher:@"to not equal"
-                                      actual:[[NSNumber numberWithInt:actual] stringValue]];
-    }
+    [Expect intMatchesPredicate:^BOOL{ return expected != actual; } expected:expected matcher:@"to not equal" actual:actual];
 }
     
 + (void)int:(int)expected toBeLessThan:(int)actual {
-    if (expected >= actual) {
+    [Expect intMatchesPredicate:^BOOL{ return expected < actual; } expected:expected matcher:@"to be less than" actual:actual];
+}
+
++ (void)int:(int)expected toBeGreaterThan:(int)actual {
+    [Expect intMatchesPredicate:^BOOL{ return expected > actual; } expected:expected matcher:@"to be greater than" actual:actual];
+}
+
++ (void)intMatchesPredicate:(BOOL (^)())predicate expected:(int)expected matcher:(NSString *)matcher actual:(int)actual {
+    if (!predicate()) {
         @throw [ExpectacularFailure expected:[[NSNumber numberWithInt:expected] stringValue]
-                                     matcher:@"to be less than"
+                                     matcher:matcher
                                       actual:[[NSNumber numberWithInt:actual] stringValue]];
     }
 }
 
-+ (void)int:(int)expected toBeGreaterThan:(int)actual {
-    if (expected <= actual) {
-        @throw [ExpectacularFailure expected:[[NSNumber numberWithInt:expected] stringValue]
-                                     matcher:@"to be greater than"
-                                      actual:[[NSNumber numberWithInt:actual] stringValue]];
-    }
-}
 
 + (void)bool:(BOOL)expected toEqual:(BOOL)actual {
     if (expected != actual) {
