@@ -10,6 +10,7 @@
 		1C311698129757F80085CF37 /* ExpectacularSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C311697129757F80085CF37 /* ExpectacularSpec.m */; };
 		1C3116A4129758E00085CF37 /* Expect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3116A3129758E00085CF37 /* Expect.m */; };
 		1C3116A5129758E00085CF37 /* Expect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3116A3129758E00085CF37 /* Expect.m */; };
+		1C66E1AC129B130400AA1B63 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C66E1AB129B130400AA1B63 /* README.md */; };
 		1C7918D812975BBC001099E5 /* ExpectacularFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7918D712975BBC001099E5 /* ExpectacularFailure.m */; };
 		1C7918D912975BBC001099E5 /* ExpectacularFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7918D712975BBC001099E5 /* ExpectacularFailure.m */; };
 		AE26667711EFBAB100EE18BD /* Cedar-iPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE42792411EF992A00CFF331 /* Cedar-iPhone.framework */; };
@@ -48,6 +49,7 @@
 		1C311697129757F80085CF37 /* ExpectacularSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpectacularSpec.m; sourceTree = "<group>"; };
 		1C3116A2129758E00085CF37 /* Expect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expect.h; sourceTree = "<group>"; };
 		1C3116A3129758E00085CF37 /* Expect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Expect.m; sourceTree = "<group>"; };
+		1C66E1AB129B130400AA1B63 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1C7918D612975BBC001099E5 /* ExpectacularFailure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpectacularFailure.h; sourceTree = "<group>"; };
 		1C7918D712975BBC001099E5 /* ExpectacularFailure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpectacularFailure.m; sourceTree = "<group>"; };
 		32A70AAB03705E1F00C91783 /* Expectacular_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expectacular_Prefix.pch; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		08FB7794FE84155DC02AAC07 /* Expectacular */ = {
 			isa = PBXGroup;
 			children = (
+				1C66E1AB129B130400AA1B63 /* README.md */,
 				AE42775B11EF8C6700CFF331 /* App */,
 				AE42775E11EF8C6B00CFF331 /* Spec */,
 				AE42778811EF8FD600CFF331 /* Externals */,
@@ -283,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C66E1AC129B130400AA1B63 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,7 +25,7 @@
     } else if (![expected isEqual:actual]) {
         @throw [ExpectacularFailure expected:[expected description]
                                      matcher:@"to equal"
-                                      actual:[actual description]];
+                                      actual:[actual description]];        
     }
 }
 

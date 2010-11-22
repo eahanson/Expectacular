@@ -271,7 +271,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>869</real>
+								<real>436</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -296,15 +296,15 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
-									<integer>3</integer>
-									<integer>2</integer>
-									<integer>1</integer>
+									<integer>13</integer>
+									<integer>12</integer>
+									<integer>11</integer>
+									<integer>10</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {869, 1304}}</string>
+							<string>{{0, 0}, {436, 1304}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -316,11 +316,11 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {886, 1322}}</string>
+						<string>{{0, 0}, {453, 1322}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>869</real>
+							<real>436</real>
 						</array>
 						<key>RubberWindowFrame</key>
 						<string>0 55 2560 1363 0 0 2560 1418 </string>
@@ -328,7 +328,7 @@
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>886pt</string>
+					<string>453pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
@@ -341,7 +341,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ExpectacularFailure.h</string>
+								<string>ExpectacularSpec.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -349,22 +349,22 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ExpectacularFailure.h</string>
+										<string>ExpectacularSpec.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1C66E190129AD6B600AA1B63</string>
+										<string>1C66E19B129B127800AA1B63</string>
 										<key>history</key>
 										<array>
 											<string>1C7918F912975D7D001099E5</string>
 											<string>1C803E7C1297688000E3991A</string>
 											<string>1C66E15E129AD50100AA1B63</string>
 											<string>1C66E160129AD50100AA1B63</string>
-											<string>1C66E186129AD67000AA1B63</string>
-											<string>1C66E18D129AD6B600AA1B63</string>
-											<string>1C66E18E129AD6B600AA1B63</string>
-											<string>1C66E18F129AD6B600AA1B63</string>
-											<string>1C66E162129AD50100AA1B63</string>
+											<string>1C66E191129B0FFF00AA1B63</string>
+											<string>1C66E192129B0FFF00AA1B63</string>
+											<string>1C66E193129B0FFF00AA1B63</string>
+											<string>1C66E194129B0FFF00AA1B63</string>
+											<string>1C66E195129B0FFF00AA1B63</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -376,14 +376,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1669, 995}}</string>
+								<string>{{0, 0}, {2102, 1317}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 55 2560 1363 0 0 2560 1418 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>995pt</string>
+							<string>1317pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -396,18 +396,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 1000}, {1669, 322}}</string>
+								<string>{{0, 1322}, {2102, 0}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 55 2560 1363 0 0 2560 1418 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>322pt</string>
+							<string>0pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>1669pt</string>
+					<string>2102pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -545,7 +545,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>312137398.91536403</real>
+	<real>312152696.74244702</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
