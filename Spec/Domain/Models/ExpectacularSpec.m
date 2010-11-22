@@ -137,6 +137,34 @@ describe(@"Expect", ^{
             });
         });
         
+        describe(@"toBeLessThan", ^{
+            it(@"should pass if expected < actual", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect int:1 toBeLessThan:2];
+                }];
+            });
+            
+            it(@"should fail if expected >= actual", ^{
+                [Expect block:^{
+                    [Expect int:2 toBeLessThan:1];
+                } toThrowExceptionWithReason:@"expected: 2\nto be less than: 1"];
+            });
+        });
+
+        describe(@"toBeGreaterThan", ^{
+            it(@"should pass if expected > actual", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect int:2 toBeGreaterThan:1];
+                }];
+            });
+            
+            it(@"should fail if expected <= actual", ^{
+                [Expect block:^{
+                    [Expect int:1 toBeGreaterThan:2];
+                } toThrowExceptionWithReason:@"expected: 1\nto be greater than: 2"];
+            });
+        });
+        
     });
     
 });

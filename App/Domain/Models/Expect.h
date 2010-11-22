@@ -8,6 +8,8 @@
 
 + (void)int:(int)expected toEqual:(int)actual;
 + (void)int:(int)expected toNotEqual:(int)actual;
++ (void)int:(int)expected toBeLessThan:(int)actual;
++ (void)int:(int)expected toBeGreaterThan:(int)actual;
 
 + (void)object:(NSObject *)expected toEqual:(NSObject *)actual;
 

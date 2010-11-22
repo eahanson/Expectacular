@@ -10,11 +10,27 @@
                                       actual:[[NSNumber numberWithInt:actual] stringValue]];
     }
 }
-
+    
 + (void)int:(int)expected toNotEqual:(int)actual {
     if (expected == actual) {
         @throw [ExpectacularFailure expected:[[NSNumber numberWithInt:expected] stringValue]
                                      matcher:@"to not equal"
+                                      actual:[[NSNumber numberWithInt:actual] stringValue]];
+    }
+}
+    
++ (void)int:(int)expected toBeLessThan:(int)actual {
+    if (expected >= actual) {
+        @throw [ExpectacularFailure expected:[[NSNumber numberWithInt:expected] stringValue]
+                                     matcher:@"to be less than"
+                                      actual:[[NSNumber numberWithInt:actual] stringValue]];
+    }
+}
+
++ (void)int:(int)expected toBeGreaterThan:(int)actual {
+    if (expected <= actual) {
+        @throw [ExpectacularFailure expected:[[NSNumber numberWithInt:expected] stringValue]
+                                     matcher:@"to be greater than"
                                       actual:[[NSNumber numberWithInt:actual] stringValue]];
     }
 }
