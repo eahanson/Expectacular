@@ -26,4 +26,4 @@ A version of Objective-C that supports blocks is required.
 
 ## Status
 
-Just getting started. Lots of stuff is currently missing. Pull requests accepted.
+Just getting started. Lots of stuff is currently missing. Fork away!

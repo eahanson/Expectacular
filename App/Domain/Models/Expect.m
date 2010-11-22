@@ -11,6 +11,31 @@
     }
 }
 
++ (void)int:(int)expected toNotEqual:(int)actual {
+    if (expected == actual) {
+        @throw [ExpectacularFailure expected:[[NSNumber numberWithInt:expected] stringValue]
+                                     matcher:@"to not equal"
+                                      actual:[[NSNumber numberWithInt:actual] stringValue]];
+    }
+}
+
++ (void)bool:(BOOL)expected toEqual:(BOOL)actual {
+    if (expected != actual) {
+        @throw [ExpectacularFailure expected:(expected ? @"YES" : @"NO") 
+                                     matcher:@"to equal" 
+                                      actual:(actual ? @"YES" : @"NO")];
+    }    
+}
+
++ (void)bool:(BOOL)expected toNotEqual:(BOOL)actual {
+    if (expected == actual) {
+        @throw [ExpectacularFailure expected:(expected ? @"YES" : @"NO")
+                                     matcher:@"to not equal"
+                                      actual:(actual ? @"YES" : @"NO")];
+    }    
+}
+
+
 + (void)object:(NSObject *)expected toEqual:(NSObject *)actual {
     if (expected == nil && actual == nil) {
         // ok

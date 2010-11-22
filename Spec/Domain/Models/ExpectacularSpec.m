@@ -92,6 +92,22 @@ describe(@"Expect", ^{
         });
     });
     
+    describe(@"BOOL", ^{
+        describe(@"toEqual", ^{
+            it(@"should pass if both BOOLs are the same", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect bool:YES toEqual:YES];
+                }];
+            });
+            
+            it(@"should fail if both BOOLs are not the same", ^{
+                [Expect block:^{
+                    [Expect bool:YES toEqual:NO];
+                } toThrowExceptionWithReason:@"expected: YES\nto equal: NO"];
+            });
+        });
+    });
+    
     describe(@"int", ^{
         describe(@"toEqual", ^{
             it(@"shoud pass if both ints are the same", ^{
@@ -105,6 +121,20 @@ describe(@"Expect", ^{
                     [Expect int:1 toEqual:2];
                 } toThrowExceptionWithReason:@"expected: 1\nto equal: 2"];
             });            
+        });
+        
+        describe(@"toNotEqual", ^{
+            it(@"should fail if both ints are the same", ^{
+                [Expect block:^{
+                    [Expect int:1 toNotEqual:1];
+                } toThrowExceptionWithReason:@"expected: 1\nto not equal: 1"];
+            });
+            
+            it(@"should pass if both ints are not the same", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect int:1 toNotEqual:2];
+                }];
+            });
         });
         
     });
