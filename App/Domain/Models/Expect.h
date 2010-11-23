@@ -12,6 +12,7 @@
 + (void)int:(int)expected toBeGreaterThan:(int)actual;
 
 + (void)object:(NSObject *)expected toEqual:(NSObject *)actual;
++ (void)object:(NSObject *)expected toNotEqual:(NSObject *)actual;
 
 + (void)block:(void (^)())block toThrowExceptionWithReason:(NSString *)reason;
 + (void)blockToNotThrowException:(void (^)())block;

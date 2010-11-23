@@ -90,6 +90,39 @@ describe(@"Expect", ^{
                 } toThrowExceptionWithReason:@"expected: foo\nto equal: nil"];
             });
         });
+        
+        describe(@"toNotEqual", ^{
+            it(@"should fail if both objects are equal", ^{
+                [Expect block:^{
+                    [Expect object:@"foo" toNotEqual:@"foo"];
+                } toThrowExceptionWithReason:@"expected: foo\nto not equal: foo"];
+            });
+            
+            it(@"should pass if both objects are not equal", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect object:@"foo" toNotEqual:@"bar"];
+                }];
+            });
+            
+            it(@"should fail if both objects are nil", ^{
+                [Expect block:^{
+                    [Expect object:nil toNotEqual:nil];
+                } toThrowExceptionWithReason:@"expected: nil\nto not equal: nil"];
+            });
+            
+            it(@"should pass if the first object is nil but the second isn't", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect object:nil toNotEqual:@"bar"];
+                }];
+            });
+            
+            it(@"should pass if the first object is not nil but the second is", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect object:@"foo" toNotEqual:nil];
+                }];
+            });
+            
+        });
     });
     
     describe(@"BOOL", ^{
