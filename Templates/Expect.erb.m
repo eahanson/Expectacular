@@ -7,40 +7,40 @@
 
 @implementation Expect
 
+<% ["int"].each do |primitive_type| %>
 
+#pragma mark <%= primitive_type %>
 
-#pragma mark int
-
-+ (void)int:(int)expected toEqual:(int)actual {
++ (void)<%= primitive_type %>:(<%= primitive_type %>)expected toEqual:(<%= primitive_type %>)actual {
     [Expect matchesPredicate:^BOOL{ return expected == actual; }
-                    expected:[NSNumber numberWithInt:expected]
+                    expected:[NSNumber numberWith<%= primitive_type.capitalize %>:expected]
                      matcher:@"to equal"
-                      actual:[NSNumber numberWithInt:actual]];
+                      actual:[NSNumber numberWith<%= primitive_type.capitalize %>:actual]];
 }
 
-+ (void)int:(int)expected toNotEqual:(int)actual {
++ (void)<%= primitive_type %>:(<%= primitive_type %>)expected toNotEqual:(<%= primitive_type %>)actual {
     [Expect matchesPredicate:^BOOL{ return expected != actual; }
-                    expected:[NSNumber numberWithInt:expected]
+                    expected:[NSNumber numberWith<%= primitive_type.capitalize %>:expected]
                      matcher:@"to not equal"
-                      actual:[NSNumber numberWithInt:actual]];
+                      actual:[NSNumber numberWith<%= primitive_type.capitalize %>:actual]];
 }
 
-+ (void)int:(int)expected toBeLessThan:(int)actual {
++ (void)<%= primitive_type %>:(<%= primitive_type %>)expected toBeLessThan:(<%= primitive_type %>)actual {
     [Expect matchesPredicate:^BOOL{ return expected < actual; }
-                    expected:[NSNumber numberWithInt:expected]
+                    expected:[NSNumber numberWith<%= primitive_type.capitalize %>:expected]
                      matcher:@"to be less than"
-                      actual:[NSNumber numberWithInt:actual]];
+                      actual:[NSNumber numberWith<%= primitive_type.capitalize %>:actual]];
 }
 
-+ (void)int:(int)expected toBeGreaterThan:(int)actual {
++ (void)<%= primitive_type %>:(<%= primitive_type %>)expected toBeGreaterThan:(<%= primitive_type %>)actual {
     [Expect matchesPredicate:^BOOL{ return expected > actual; }
-                    expected:[NSNumber numberWithInt:expected]
+                    expected:[NSNumber numberWith<%= primitive_type.capitalize %>:expected]
                      matcher:@"to be greater than"
-                      actual:[NSNumber numberWithInt:actual]];
+                      actual:[NSNumber numberWith<%= primitive_type.capitalize %>:actual]];
     
 }
 
-
+<% end %>
 
 #pragma mark bool
 

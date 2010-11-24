@@ -45,6 +45,8 @@
 		1CFBA984129DB390004F383A /* ExpectacularSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpectacularSpec.m; sourceTree = "<group>"; };
 		1CFBA985129DB390004F383A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1CFBA9B7129DB5A2004F383A /* Expectacular_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expectacular_Prefix.pch; sourceTree = "<group>"; };
+		1CFBA9C2129DB8D3004F383A /* Expect.erb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expect.erb.h; sourceTree = "<group>"; };
+		1CFBA9C3129DB8D3004F383A /* Expect.erb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Expect.erb.m; sourceTree = "<group>"; };
 		AE2667B111EFC2B000EE18BD /* OCMock-iPhone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "OCMock-iPhone.framework"; sourceTree = "<group>"; };
 		AE42778911EF8FD600CFF331 /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cedar.framework; sourceTree = "<group>"; };
 		AE4277AC11EF914F00CFF331 /* Specs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Specs; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,7 @@
 				1CFBA9B7129DB5A2004F383A /* Expectacular_Prefix.pch */,
 				1CFBA983129DB390004F383A /* Specs */,
 				1CFBA97B129DB2DA004F383A /* Classes */,
+				1CFBA9C1129DB8A4004F383A /* Templates */,
 				AE42778811EF8FD600CFF331 /* Externals */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 			);
@@ -108,6 +111,15 @@
 				1CFBA985129DB390004F383A /* main.m */,
 			);
 			path = Specs;
+			sourceTree = "<group>";
+		};
+		1CFBA9C1129DB8A4004F383A /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				1CFBA9C2129DB8D3004F383A /* Expect.erb.h */,
+				1CFBA9C3129DB8D3004F383A /* Expect.erb.m */,
+			);
+			path = Templates;
 			sourceTree = "<group>";
 		};
 		AE42778811EF8FD600CFF331 /* Externals */ = {

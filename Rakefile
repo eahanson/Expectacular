@@ -36,7 +36,7 @@ task :clean do
 end
 
 desc "Build"
-task :build do
+task :build => :gen do
   stdout = File.join(ENV['CC_BUILD_ARTIFACTS'], "build_all.output") if (ENV['IS_CI_BOX'])
   system_or_exit(%Q[xcodebuild -project #{PROJECT_NAME}.xcodeproj -alltargets -configuration #{CONFIGURATION} build], output_file("build"))
 end
@@ -47,4 +47,14 @@ task :specs => :build do
   ENV["DYLD_FRAMEWORK_PATH"] = build_dir
   system_or_exit("cd #{build_dir} && ./#{SPECS_TARGET_NAME}")
   puts("\n\n")
+end
+
+desc "Generate code"
+task :gen do
+  require 'erb'
+  ["m", "h"].each do |extension|
+		output_file = "Classes/Expect.#{extension}"
+		puts "Generating #{output_file}"
+		File.open(output_file, 'w') {|f| f << ERB.new(IO.read("Templates/Expect.erb.#{extension}")).result(binding) }
+  end
 end
