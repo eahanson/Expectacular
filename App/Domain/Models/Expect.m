@@ -7,6 +7,8 @@
 
 @implementation Expect
 
+#pragma mark int
+
 + (void)int:(int)expected toEqual:(int)actual {
     [Expect matchesPredicate:^BOOL{ return expected == actual; }
                     expected:[NSNumber numberWithInt:expected]
@@ -36,13 +38,7 @@
     
 }
 
-+ (void)matchesPredicate:(BOOL (^)())predicate expected:(NSObject *)expected matcher:(NSString *)matcher actual:(NSObject *)actual {
-    if (!predicate()) {
-        @throw [ExpectacularFailure expected:[NSString stringWithFormat:@"%@", expected]
-                                     matcher:matcher 
-                                      actual:[NSString stringWithFormat:@"%@", actual]];
-    }
-}
+#pragma mark bool
 
 + (void)bool:(BOOL)expected toEqual:(BOOL)actual {
     if (expected != actual) {
@@ -60,6 +56,7 @@
     }    
 }
 
+#pragma mark object
 
 + (void)object:(NSObject *)expected toEqual:(NSObject *)actual {
     if (expected == nil && actual == nil) {
@@ -95,6 +92,8 @@
     }
 }
 
+#pragma mark block
+
 + (void)block:(void (^)())block toThrowExceptionWithReason:(NSString *)reason {
     BOOL threw = NO;
     
@@ -121,5 +120,16 @@
         @throw [ExpectacularFailure messageWithFormat:@"expected block to not throw exception\nbut it threw exception with reason: %@", [exception reason]];
     }
 }
+
+#pragma mark private
+
++ (void)matchesPredicate:(BOOL (^)())predicate expected:(NSObject *)expected matcher:(NSString *)matcher actual:(NSObject *)actual {
+    if (!predicate()) {
+        @throw [ExpectacularFailure expected:[NSString stringWithFormat:@"%@", expected]
+                                     matcher:matcher 
+                                      actual:[NSString stringWithFormat:@"%@", actual]];
+    }
+}
+
 
 @end
