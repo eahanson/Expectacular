@@ -1,7 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface Expect : NSObject {
-}
+@interface Expect : NSObject
 
 + (void)bool:(BOOL)expected toEqual:(BOOL)actual;
 + (void)bool:(BOOL)expected toNotEqual:(BOOL)actual;
