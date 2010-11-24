@@ -5,13 +5,11 @@
 		activeExecutable = 1C31167A1297568E0085CF37 /* Specs */;
 		activeTarget = AE4277AB11EF914F00CFF331 /* Specs */;
 		addToTargets = (
-			AE4279B911EFB64F00CFF331 /* UISpecs */,
 			AE4277AB11EF914F00CFF331 /* Specs */,
 		);
 		codeSenseManager = 1C311692129756AD0085CF37 /* Code sense */;
 		executables = (
 			1C31167A1297568E0085CF37 /* Specs */,
-			1C31167B1297568E0085CF37 /* UISpecs */,
 		);
 		perUserDictionary = {
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
@@ -34,6 +32,28 @@
 					PBXFileDataSource_Errors_ColumnID,
 					PBXFileDataSource_Warnings_ColumnID,
 					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					758,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
 			PBXPerProjectTemplateStateSaveDate = 312324658;
@@ -89,33 +109,6 @@
 		sourceDirectories = (
 		);
 	};
-	1C31167B1297568E0085CF37 /* UISpecs */ = {
-		isa = PBXExecutable;
-		activeArgIndices = (
-		);
-		argumentStrings = (
-		);
-		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
-		configStateDict = {
-		};
-		customDataFormattersEnabled = 1;
-		dataTipCustomDataFormattersEnabled = 1;
-		dataTipShowTypeColumn = 1;
-		dataTipSortType = 0;
-		debuggerPlugin = GDBDebugging;
-		disassemblyDisplayState = 0;
-		enableDebugStr = 1;
-		environmentEntries = (
-		);
-		executableSystemSymbolLevel = 0;
-		executableUserSymbolLevel = 0;
-		libgmallocEnabled = 0;
-		name = UISpecs;
-		showTypeColumn = 0;
-		sourceDirectories = (
-		);
-	};
 	1C311691129756AD0085CF37 /* Source Control */ = {
 		isa = PBXSourceControlManager;
 		fallbackIsa = XCSourceControlManager;
@@ -132,12 +125,18 @@
 	};
 	1C311694129756E70085CF37 /* Rakefile */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1384, 1232}}";
-			sepNavSelRange = "{2275, 63}";
-			sepNavVisRange = "{0, 1248}";
+			sepNavIntBoundsRect = "{{0, 0}, {985, 816}}";
+			sepNavSelRange = "{1583, 0}";
+			sepNavVisRange = "{349, 1255}";
 		};
 	};
 	1C311697129757F80085CF37 /* ExpectacularSpec.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ExpectacularSpec.m;
+		path = /Users/ehanson/Development/Expectacular/Spec/Domain/Models/ExpectacularSpec.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1237, 3152}}";
 			sepNavSelRange = "{5137, 0}";
@@ -145,17 +144,29 @@
 		};
 	};
 	1C3116A2129758E00085CF37 /* Expect.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = Expect.h;
+		path = /Users/ehanson/Development/Expectacular/App/Domain/Models/Expect.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {976, 618}}";
-			sepNavSelRange = "{508, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {976, 439}}";
+			sepNavSelRange = "{376, 0}";
 			sepNavVisRange = "{0, 647}";
 		};
 	};
 	1C3116A3129758E00085CF37 /* Expect.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = Expect.m;
+		path = /Users/ehanson/Development/Expectacular/App/Domain/Models/Expect.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {976, 2144}}";
-			sepNavSelRange = "{258, 0}";
-			sepNavVisRange = "{0, 1458}";
+			sepNavIntBoundsRect = "{{0, 0}, {976, 2224}}";
+			sepNavSelRange = "{615, 0}";
+			sepNavVisRange = "{260, 1179}";
 		};
 	};
 	1C66E15E129AD50100AA1B63 /* PBXTextBookmark */ = {
@@ -204,7 +215,7 @@
 	};
 	1C66E1AB129B130400AA1B63 /* README.md */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2041, 1285}}";
+			sepNavIntBoundsRect = "{{0, 0}, {976, 641}}";
 			sepNavSelRange = "{718, 0}";
 			sepNavVisRange = "{0, 719}";
 		};
@@ -277,8 +288,8 @@
 		isa = PBXTextBookmark;
 		fRef = 1C311694129756E70085CF37 /* Rakefile */;
 		name = "Rakefile: 68";
-		rLen = 63;
-		rLoc = 2275;
+		rLen = 0;
+		rLoc = 1604;
 		rType = 0;
 		vrLen = 1248;
 		vrLoc = 0;
@@ -314,6 +325,12 @@
 		vrLoc = 0;
 	};
 	1C7918D612975BBC001099E5 /* ExpectacularFailure.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ExpectacularFailure.h;
+		path = /Users/ehanson/Development/Expectacular/App/Domain/Models/ExpectacularFailure.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1608, 963}}";
 			sepNavSelRange = "{226, 0}";
@@ -321,6 +338,12 @@
 		};
 	};
 	1C7918D712975BBC001099E5 /* ExpectacularFailure.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ExpectacularFailure.m;
+		path = /Users/ehanson/Development/Expectacular/App/Domain/Models/ExpectacularFailure.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {976, 641}}";
 			sepNavSelRange = "{71, 92}";
@@ -342,12 +365,18 @@
 		fRef = 1C3116A3129758E00085CF37 /* Expect.m */;
 		name = "Expect.m: 10";
 		rLen = 0;
-		rLoc = 258;
+		rLoc = 259;
 		rType = 0;
 		vrLen = 1458;
 		vrLoc = 0;
 	};
 	AE26668F11EFBBA500EE18BD /* MyViewSpec.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = MyViewSpec.m;
+		path = /Users/ehanson/Development/Expectacular/Spec/UI/Views/MyViewSpec.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {2041, 1285}}";
 			sepNavSelRange = "{577, 78}";
@@ -360,13 +389,13 @@
 			1C31167A1297568E0085CF37 /* Specs */,
 		);
 	};
-	AE4279B911EFB64F00CFF331 /* UISpecs */ = {
-		activeExec = 0;
-		executables = (
-			1C31167B1297568E0085CF37 /* UISpecs */,
-		);
-	};
 	AE427A0611EFB82600CFF331 /* main.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = main.m;
+		path = /Users/ehanson/Development/Expectacular/Spec/Domain/main.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {765, 1262}}";
 			sepNavSelRange = "{0, 0}";

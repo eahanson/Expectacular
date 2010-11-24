@@ -1,7 +1,6 @@
 PROJECT_NAME = "Expectacular"
 CONFIGURATION = "Release"
 SPECS_TARGET_NAME = "Specs"
-UI_SPECS_TARGET_NAME = "UISpecs"
 SDK_DIR = "/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk"
 
 def build_dir(effective_platform_name)
@@ -22,56 +21,30 @@ def output_file(target)
 end
 
 desc "Run all specs and uispecs"
-task :default => [:specs, :uispecs]
+task :default => [:specs]
 
 desc "Run on cruisecontrol"
 task :cruise do
   Rake::Task[:clean].invoke
   Rake::Task[:specs].invoke
-  Rake::Task[:uispecs].invoke
 end
 
 desc "Clean"
 task :clean do
   stdout = File.join(ENV['CC_BUILD_ARTIFACTS'], "clean.output") if (ENV['IS_CI_BOX'])
-  system_or_exit(%Q[xcodebuild -project #{PROJECT_NAME}.xcodeproj -alltargets -configuration #{CONFIGURATION} clean], stdout)
+  system_or_exit(%Q[xcodebuild -project #{PROJECT_NAME}.xcodeproj -alltargets -configuration #{CONFIGURATION} clean], output_file("clean"))
 end
 
-desc "Build specs"
-task :build_specs do
-  stdout = File.join(ENV['CC_BUILD_ARTIFACTS'], "build_specs.output") if (ENV['IS_CI_BOX'])
-  system_or_exit(%Q[xcodebuild -project #{PROJECT_NAME}.xcodeproj -target #{SPECS_TARGET_NAME} -configuration #{CONFIGURATION} build], output_file("specs"))
-end
-
-desc "Build UISpecs"
-task :build_uispecs do
-  system_or_exit(%Q[xcodebuild -project #{PROJECT_NAME}.xcodeproj -target #{UI_SPECS_TARGET_NAME} -configuration #{CONFIGURATION} -sdk iphonesimulator3.2 ARCHS=i386 build], output_file("uispecs"))
-end
-
-desc "Build all"
-task :build_all do
+desc "Build"
+task :build do
   stdout = File.join(ENV['CC_BUILD_ARTIFACTS'], "build_all.output") if (ENV['IS_CI_BOX'])
-  system_or_exit(%Q[xcodebuild -project #{PROJECT_NAME}.xcodeproj -alltargets -configuration #{CONFIGURATION} build], stdout)
+  system_or_exit(%Q[xcodebuild -project #{PROJECT_NAME}.xcodeproj -alltargets -configuration #{CONFIGURATION} build], output_file("build"))
 end
 
 desc "Run specs"
-task :specs => :build_specs do
+task :specs => :build do
   build_dir = build_dir("")
   ENV["DYLD_FRAMEWORK_PATH"] = build_dir
   system_or_exit("cd #{build_dir} && ./#{SPECS_TARGET_NAME}")
-  puts("\n\n")
-end
-
-desc "Run UISpecs"
-require 'tmpdir'
-task :uispecs => :build_uispecs do
-  `osascript -e 'tell application "iPhone Simulator" to quit'`
-  
-  ENV["DYLD_ROOT_PATH"] = SDK_DIR
-  ENV["IPHONE_SIMULATOR_ROOT"] = SDK_DIR
-  ENV["CFFIXED_USER_HOME"] = Dir.tmpdir
-  ENV["CEDAR_HEADLESS_SPECS"] = "1"
-
-  system_or_exit(%Q[#{File.join(build_dir("-iphonesimulator"), "#{UI_SPECS_TARGET_NAME}.app", UI_SPECS_TARGET_NAME)} -RegisterForSystemEvents]);
   puts("\n\n")
 end
