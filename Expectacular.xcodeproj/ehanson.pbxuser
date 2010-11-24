@@ -216,8 +216,8 @@
 	1C66E1AB129B130400AA1B63 /* README.md */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {976, 641}}";
-			sepNavSelRange = "{718, 0}";
-			sepNavVisRange = "{0, 719}";
+			sepNavSelRange = "{382, 0}";
+			sepNavVisRange = "{0, 763}";
 		};
 	};
 	1C66E1BF129B179C00AA1B63 /* PBXTextBookmark */ = {
@@ -225,7 +225,7 @@
 		fRef = 1C66E1AB129B130400AA1B63 /* README.md */;
 		name = "README.md: 29";
 		rLen = 0;
-		rLoc = 718;
+		rLoc = 762;
 		rType = 0;
 		vrLen = 719;
 		vrLoc = 0;

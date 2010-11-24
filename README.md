@@ -20,9 +20,21 @@ full-featured matcher library that can be grokked easily by XCode's code complet
         [fluxCapacitor rethread];
     }];
 
+## Documentation
+
+See [Expect.h](Classes/Expect.h)
+
 ## Requirements
 
 A version of Objective-C that supports blocks is required.
+
+## Installation
+
+Copy everything from the "Classes" directory into your project, and then include `Expect.h`.
+
+## Developing
+
+Run `rake clean` to clean and `rake specs` (or just `rake`) to run the tests.
 
 ## Status
 

@@ -40,11 +40,11 @@
 		1C66E1AB129B130400AA1B63 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1CFBA97C129DB386004F383A /* Expect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expect.h; sourceTree = "<group>"; };
 		1CFBA97D129DB386004F383A /* Expect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Expect.m; sourceTree = "<group>"; };
-		1CFBA97E129DB386004F383A /* Expectacular_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expectacular_Prefix.pch; sourceTree = "<group>"; };
 		1CFBA97F129DB386004F383A /* ExpectacularFailure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpectacularFailure.h; sourceTree = "<group>"; };
 		1CFBA980129DB386004F383A /* ExpectacularFailure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpectacularFailure.m; sourceTree = "<group>"; };
 		1CFBA984129DB390004F383A /* ExpectacularSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpectacularSpec.m; sourceTree = "<group>"; };
 		1CFBA985129DB390004F383A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CFBA9B7129DB5A2004F383A /* Expectacular_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expectacular_Prefix.pch; sourceTree = "<group>"; };
 		AE2667B111EFC2B000EE18BD /* OCMock-iPhone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "OCMock-iPhone.framework"; sourceTree = "<group>"; };
 		AE42778911EF8FD600CFF331 /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cedar.framework; sourceTree = "<group>"; };
 		AE4277AC11EF914F00CFF331 /* Specs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Specs; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +52,6 @@
 		AE4277F811EF91FB00CFF331 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMock.framework; sourceTree = "<group>"; };
 		AE42792411EF992A00CFF331 /* Cedar-iPhone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Cedar-iPhone.framework"; sourceTree = "<group>"; };
 		AE42794311EF997500CFF331 /* OCHamcrest-iPhone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "OCHamcrest-iPhone.framework"; sourceTree = "<group>"; };
-		AE4279BC11EFB65000CFF331 /* UISpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UISpecs-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +73,7 @@
 			children = (
 				1C66E1AB129B130400AA1B63 /* README.md */,
 				1C311694129756E70085CF37 /* Rakefile */,
-				AE4279BC11EFB65000CFF331 /* UISpecs-Info.plist */,
+				1CFBA9B7129DB5A2004F383A /* Expectacular_Prefix.pch */,
 				1CFBA983129DB390004F383A /* Specs */,
 				1CFBA97B129DB2DA004F383A /* Classes */,
 				AE42778811EF8FD600CFF331 /* Externals */,
@@ -96,7 +95,6 @@
 			children = (
 				1CFBA97C129DB386004F383A /* Expect.h */,
 				1CFBA97D129DB386004F383A /* Expect.m */,
-				1CFBA97E129DB386004F383A /* Expectacular_Prefix.pch */,
 				1CFBA97F129DB386004F383A /* ExpectacularFailure.h */,
 				1CFBA980129DB386004F383A /* ExpectacularFailure.m */,
 			);
