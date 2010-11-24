@@ -22,7 +22,7 @@ full-featured matcher library that can be grokked easily by XCode's code complet
 
 ## Documentation
 
-See [Expect.h](Classes/Expect.h)
+See [Expect.h](blob/master/Classes/Expect.h)
 
 ## Requirements
 
