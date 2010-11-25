@@ -1,8 +1,11 @@
+// THIS FILE IS GENERATED. DO NOT EDIT.
+
 #import "Expect.h"
 #import "ExpectacularFailure.h"
 
 @interface Expect (Private)
-+ (void)matchesPredicate:(BOOL (^)())predicate expected:(NSObject *)expected matcher:(NSString *)matcher actual:(NSObject *)actual;
++ (void)matchesPredicate:(BOOL (^)())predicate expected:(NSString *)expected matcher:(NSString *)matcher actual:(NSString *)actual;
++ (void)matchesPredicate:(BOOL (^)())predicate expected:(NSString *)expected matcher:(NSString *)matcher actual:(NSString *)actual tolerance:(NSString *)tolerance;
 @end
 
 @implementation Expect
@@ -318,66 +321,88 @@
 }
     
 
+
+
 #pragma mark float
     
-+ (void)float:(float)expected toEqual:(float)actual {
-    [Expect matchesPredicate:^BOOL{ return expected == actual; }
+        
++ (void)float:(float)expected toEqual:(float)actual tolerance:(float)tolerance {
+    [Expect matchesPredicate:^BOOL{ return ABS(expected - actual) <= tolerance; }
                     expected:[NSString stringWithFormat:@"%f", expected]
                      matcher:@"to equal"
-                      actual:[NSString stringWithFormat:@"%f", actual]];
+                      actual:[NSString stringWithFormat:@"%f", actual]
+                   tolerance:[NSString stringWithFormat:@"%f", tolerance]];
 }
+        
     
-+ (void)float:(float)expected toNotEqual:(float)actual {
-    [Expect matchesPredicate:^BOOL{ return expected != actual; }
+        
++ (void)float:(float)expected toNotEqual:(float)actual tolerance:(float)tolerance {
+    [Expect matchesPredicate:^BOOL{ return ABS(expected - actual) > tolerance; }
                     expected:[NSString stringWithFormat:@"%f", expected]
                      matcher:@"to not equal"
-                      actual:[NSString stringWithFormat:@"%f", actual]];
+                      actual:[NSString stringWithFormat:@"%f", actual]
+                   tolerance:[NSString stringWithFormat:@"%f", tolerance]];
 }
+        
     
+        
 + (void)float:(float)expected toBeLessThan:(float)actual {
     [Expect matchesPredicate:^BOOL{ return expected < actual; }
                     expected:[NSString stringWithFormat:@"%f", expected]
                      matcher:@"to be less than"
                       actual:[NSString stringWithFormat:@"%f", actual]];
 }
+        
     
+        
 + (void)float:(float)expected toBeGreaterThan:(float)actual {
     [Expect matchesPredicate:^BOOL{ return expected > actual; }
                     expected:[NSString stringWithFormat:@"%f", expected]
                      matcher:@"to be greater than"
                       actual:[NSString stringWithFormat:@"%f", actual]];
 }
+        
     
 
 #pragma mark double
     
-+ (void)double:(double)expected toEqual:(double)actual {
-    [Expect matchesPredicate:^BOOL{ return expected == actual; }
-                    expected:[NSString stringWithFormat:@"%d", expected]
+        
++ (void)double:(double)expected toEqual:(double)actual tolerance:(double)tolerance {
+    [Expect matchesPredicate:^BOOL{ return ABS(expected - actual) <= tolerance; }
+                    expected:[NSString stringWithFormat:@"%f", expected]
                      matcher:@"to equal"
-                      actual:[NSString stringWithFormat:@"%d", actual]];
+                      actual:[NSString stringWithFormat:@"%f", actual]
+                   tolerance:[NSString stringWithFormat:@"%f", tolerance]];
 }
+        
     
-+ (void)double:(double)expected toNotEqual:(double)actual {
-    [Expect matchesPredicate:^BOOL{ return expected != actual; }
-                    expected:[NSString stringWithFormat:@"%d", expected]
+        
++ (void)double:(double)expected toNotEqual:(double)actual tolerance:(double)tolerance {
+    [Expect matchesPredicate:^BOOL{ return ABS(expected - actual) > tolerance; }
+                    expected:[NSString stringWithFormat:@"%f", expected]
                      matcher:@"to not equal"
-                      actual:[NSString stringWithFormat:@"%d", actual]];
+                      actual:[NSString stringWithFormat:@"%f", actual]
+                   tolerance:[NSString stringWithFormat:@"%f", tolerance]];
 }
+        
     
+        
 + (void)double:(double)expected toBeLessThan:(double)actual {
     [Expect matchesPredicate:^BOOL{ return expected < actual; }
-                    expected:[NSString stringWithFormat:@"%d", expected]
+                    expected:[NSString stringWithFormat:@"%f", expected]
                      matcher:@"to be less than"
-                      actual:[NSString stringWithFormat:@"%d", actual]];
+                      actual:[NSString stringWithFormat:@"%f", actual]];
 }
+        
     
+        
 + (void)double:(double)expected toBeGreaterThan:(double)actual {
     [Expect matchesPredicate:^BOOL{ return expected > actual; }
-                    expected:[NSString stringWithFormat:@"%d", expected]
+                    expected:[NSString stringWithFormat:@"%f", expected]
                      matcher:@"to be greater than"
-                      actual:[NSString stringWithFormat:@"%d", actual]];
+                      actual:[NSString stringWithFormat:@"%f", actual]];
 }
+        
     
 
 
@@ -466,11 +491,20 @@
 
 #pragma mark private
 
-+ (void)matchesPredicate:(BOOL (^)())predicate expected:(NSObject *)expected matcher:(NSString *)matcher actual:(NSObject *)actual {
++ (void)matchesPredicate:(BOOL (^)())predicate expected:(NSString *)expected matcher:(NSString *)matcher actual:(NSString *)actual {
     if (!predicate()) {
-        @throw [ExpectacularFailure expected:[NSString stringWithFormat:@"%@", expected]
+        @throw [ExpectacularFailure expected:expected
                                      matcher:matcher 
-                                      actual:[NSString stringWithFormat:@"%@", actual]];
+                                      actual:actual];
+    }
+}
+
++ (void)matchesPredicate:(BOOL (^)())predicate expected:(NSString *)expected matcher:(NSString *)matcher actual:(NSString *)actual tolerance:(NSString *)tolerance {
+    if (!predicate()) {
+        @throw [ExpectacularFailure expected:expected
+                                     matcher:matcher 
+                                      actual:actual
+                                   tolerance:tolerance];
     }
 }
 

@@ -119,28 +119,45 @@
 + (void)unsignedLongLong:(unsigned long long)expected toBeGreaterThan:(unsigned long long)actual;
     
 
+
+
 #pragma mark float
     
-+ (void)float:(float)expected toEqual:(float)actual;
+        
++ (void)float:(float)expected toEqual:(float)actual tolerance:(float)tolerance;
+        
     
-+ (void)float:(float)expected toNotEqual:(float)actual;
+        
++ (void)float:(float)expected toNotEqual:(float)actual tolerance:(float)tolerance;
+        
     
+        
 + (void)float:(float)expected toBeLessThan:(float)actual;
+        
     
+        
 + (void)float:(float)expected toBeGreaterThan:(float)actual;
+        
     
 
 #pragma mark double
     
-+ (void)double:(double)expected toEqual:(double)actual;
+        
++ (void)double:(double)expected toEqual:(double)actual tolerance:(double)tolerance;
+        
     
-+ (void)double:(double)expected toNotEqual:(double)actual;
+        
++ (void)double:(double)expected toNotEqual:(double)actual tolerance:(double)tolerance;
+        
     
+        
 + (void)double:(double)expected toBeLessThan:(double)actual;
+        
     
+        
 + (void)double:(double)expected toBeGreaterThan:(double)actual;
+        
     
-
 
 
 #pragma mark object

@@ -200,6 +200,36 @@ describe(@"Expect", ^{
         
     });
     
+    describe(@"float", ^{
+        describe(@"toEqual", ^{
+            it(@"shoud pass if both floats are equal (within the tolerance)", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect float:1.0 toEqual:1.001 tolerance:0.01];
+                }];
+            });
+            
+            it(@"should fail if both floats are not equal (not within the tolerance)", ^{
+                [Expect block:^{
+                    [Expect float:1.0 toEqual:1.001 tolerance:0.0001];
+                } toThrowExceptionWithReason:@"expected: 1.000000\nto equal: 1.001000\nwith tolerance: 0.000100"];
+            });            
+        });
+        
+        describe(@"toNotEqual", ^{
+            it(@"should fail if both floats are the same (within the tolerance)", ^{
+                [Expect block:^{
+                    [Expect float:1.0 toNotEqual:1.001 tolerance:0.01];
+                } toThrowExceptionWithReason:@"expected: 1.000000\nto not equal: 1.001000\nwith tolerance: 0.010000"];
+            });
+            
+            it(@"should pass if both floats are not the same (not within the tolerance)", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect float:1.0 toNotEqual:1.001 tolerance:0.0001];
+                }];
+            });
+        });
+    });
+    
 });
 
 SPEC_END

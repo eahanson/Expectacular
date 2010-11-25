@@ -1,21 +1,46 @@
+// <%= @header_comment %>
+
 #import "Expect.h"
 #import "ExpectacularFailure.h"
 
 @interface Expect (Private)
-+ (void)matchesPredicate:(BOOL (^)())predicate expected:(NSObject *)expected matcher:(NSString *)matcher actual:(NSObject *)actual;
++ (void)matchesPredicate:(BOOL (^)())predicate expected:(NSString *)expected matcher:(NSString *)matcher actual:(NSString *)actual;
++ (void)matchesPredicate:(BOOL (^)())predicate expected:(NSString *)expected matcher:(NSString *)matcher actual:(NSString *)actual tolerance:(NSString *)tolerance;
 @end
 
 @implementation Expect
 
-<% @types.each do |type| %>
+<% @integer_types.each do |type| %>
 #pragma mark <%= type[:type] %>
-    <% @matchers.each do |matcher| %>
+    <% @integer_matchers.each do |matcher| %>
 + (void)<%= type[:name] %>:(<%= type[:type] %>)expected <%= matcher[:matcher] %>:(<%= type[:type] %>)actual {
     [Expect matchesPredicate:^BOOL{ <%= matcher[:predicate] %> }
                     expected:[NSString stringWithFormat:@"<%= type[:converter] %>", expected]
                      matcher:@"<%= matcher[:matcher_description] %>"
                       actual:[NSString stringWithFormat:@"<%= type[:converter] %>", actual]];
 }
+    <% end %>
+<% end %>
+
+<% @non_integer_types.each do |type| %>
+#pragma mark <%= type[:type] %>
+    <% @non_integer_matchers.each do |matcher| %>
+        <% if matcher[:tolerance] %>
++ (void)<%= type[:name] %>:(<%= type[:type] %>)expected <%= matcher[:matcher] %>:(<%= type[:type] %>)actual tolerance:(<%= type[:type] %>)tolerance {
+    [Expect matchesPredicate:^BOOL{ <%= matcher[:predicate] %> }
+                    expected:[NSString stringWithFormat:@"<%= type[:converter] %>", expected]
+                     matcher:@"<%= matcher[:matcher_description] %>"
+                      actual:[NSString stringWithFormat:@"<%= type[:converter] %>", actual]
+                   tolerance:[NSString stringWithFormat:@"<%= type[:converter] %>", tolerance]];
+}
+        <% else %>
++ (void)<%= type[:name] %>:(<%= type[:type] %>)expected <%= matcher[:matcher] %>:(<%= type[:type] %>)actual {
+    [Expect matchesPredicate:^BOOL{ <%= matcher[:predicate] %> }
+                    expected:[NSString stringWithFormat:@"<%= type[:converter] %>", expected]
+                     matcher:@"<%= matcher[:matcher_description] %>"
+                      actual:[NSString stringWithFormat:@"<%= type[:converter] %>", actual]];
+}
+        <% end %>
     <% end %>
 <% end %>
 
@@ -104,11 +129,20 @@
 
 #pragma mark private
 
-+ (void)matchesPredicate:(BOOL (^)())predicate expected:(NSObject *)expected matcher:(NSString *)matcher actual:(NSObject *)actual {
++ (void)matchesPredicate:(BOOL (^)())predicate expected:(NSString *)expected matcher:(NSString *)matcher actual:(NSString *)actual {
     if (!predicate()) {
-        @throw [ExpectacularFailure expected:[NSString stringWithFormat:@"%@", expected]
+        @throw [ExpectacularFailure expected:expected
                                      matcher:matcher 
-                                      actual:[NSString stringWithFormat:@"%@", actual]];
+                                      actual:actual];
+    }
+}
+
++ (void)matchesPredicate:(BOOL (^)())predicate expected:(NSString *)expected matcher:(NSString *)matcher actual:(NSString *)actual tolerance:(NSString *)tolerance {
+    if (!predicate()) {
+        @throw [ExpectacularFailure expected:expected
+                                     matcher:matcher 
+                                      actual:actual
+                                   tolerance:tolerance];
     }
 }
 

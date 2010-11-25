@@ -8,13 +8,23 @@
 
 + (void)bool:(BOOL)expected toNotEqual:(BOOL)actual;
 
-<% @types.each do |type| %>
+<% @integer_types.each do |type| %>
 #pragma mark <%= type[:type] %>
-    <% @matchers.each do |matcher| %>
+    <% @integer_matchers.each do |matcher| %>
 + (void)<%= type[:name] %>:(<%= type[:type] %>)expected <%= matcher[:matcher] %>:(<%= type[:type] %>)actual;
     <% end %>
 <% end %>
 
+<% @non_integer_types.each do |type| %>
+#pragma mark <%= type[:type] %>
+    <% @non_integer_matchers.each do |matcher| %>
+        <% if matcher[:tolerance] %>
++ (void)<%= type[:name] %>:(<%= type[:type] %>)expected <%= matcher[:matcher] %>:(<%= type[:type] %>)actual tolerance:(<%= type[:type] %>)tolerance;
+        <% else %>
++ (void)<%= type[:name] %>:(<%= type[:type] %>)expected <%= matcher[:matcher] %>:(<%= type[:type] %>)actual;
+        <% end %>
+    <% end %>
+<% end %>
 
 #pragma mark object
 
