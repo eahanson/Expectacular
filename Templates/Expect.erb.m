@@ -7,39 +7,16 @@
 
 @implementation Expect
 
-<% ["int"].each do |primitive_type| %>
-
-#pragma mark <%= primitive_type %>
-
-+ (void)<%= primitive_type %>:(<%= primitive_type %>)expected toEqual:(<%= primitive_type %>)actual {
-    [Expect matchesPredicate:^BOOL{ return expected == actual; }
-                    expected:[NSNumber numberWith<%= primitive_type.capitalize %>:expected]
-                     matcher:@"to equal"
-                      actual:[NSNumber numberWith<%= primitive_type.capitalize %>:actual]];
+<% @types.each do |type| %>
+#pragma mark <%= type[:type] %>
+    <% @matchers.each do |matcher| %>
++ (void)<%= type[:name] %>:(<%= type[:type] %>)expected <%= matcher[:matcher] %>:(<%= type[:type] %>)actual {
+    [Expect matchesPredicate:^BOOL{ <%= matcher[:predicate] %> }
+                    expected:[NSString stringWithFormat:@"<%= type[:converter] %>", expected]
+                     matcher:@"<%= matcher[:matcher_description] %>"
+                      actual:[NSString stringWithFormat:@"<%= type[:converter] %>", actual]];
 }
-
-+ (void)<%= primitive_type %>:(<%= primitive_type %>)expected toNotEqual:(<%= primitive_type %>)actual {
-    [Expect matchesPredicate:^BOOL{ return expected != actual; }
-                    expected:[NSNumber numberWith<%= primitive_type.capitalize %>:expected]
-                     matcher:@"to not equal"
-                      actual:[NSNumber numberWith<%= primitive_type.capitalize %>:actual]];
-}
-
-+ (void)<%= primitive_type %>:(<%= primitive_type %>)expected toBeLessThan:(<%= primitive_type %>)actual {
-    [Expect matchesPredicate:^BOOL{ return expected < actual; }
-                    expected:[NSNumber numberWith<%= primitive_type.capitalize %>:expected]
-                     matcher:@"to be less than"
-                      actual:[NSNumber numberWith<%= primitive_type.capitalize %>:actual]];
-}
-
-+ (void)<%= primitive_type %>:(<%= primitive_type %>)expected toBeGreaterThan:(<%= primitive_type %>)actual {
-    [Expect matchesPredicate:^BOOL{ return expected > actual; }
-                    expected:[NSNumber numberWith<%= primitive_type.capitalize %>:expected]
-                     matcher:@"to be greater than"
-                      actual:[NSNumber numberWith<%= primitive_type.capitalize %>:actual]];
-    
-}
-
+    <% end %>
 <% end %>
 
 #pragma mark bool

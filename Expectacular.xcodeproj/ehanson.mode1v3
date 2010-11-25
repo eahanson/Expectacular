@@ -248,6 +248,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -330,8 +332,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -349,7 +349,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1CFBAACB129DBB84004F383A</string>
+										<string>1CFBAAF8129DF87F004F383A</string>
 										<key>history</key>
 										<array>
 											<string>1C7918F912975D7D001099E5</string>
@@ -362,12 +362,12 @@
 											<string>1C66E21F129B765600AA1B63</string>
 											<string>1CFBA9C5129DBAB8004F383A</string>
 											<string>1CFBA9C7129DBAB8004F383A</string>
-											<string>1CFBA9C8129DBAB8004F383A</string>
 											<string>1CFBAAC4129DBB0C004F383A</string>
-											<string>1CFBAAC5129DBB0C004F383A</string>
-											<string>1CFBAAC9129DBB84004F383A</string>
-											<string>1CFBAACA129DBB84004F383A</string>
-											<string>1CFBA9CA129DBAB8004F383A</string>
+											<string>1CFBAAE8129DF718004F383A</string>
+											<string>1CFBAAF2129DF787004F383A</string>
+											<string>1CFBAAF3129DF787004F383A</string>
+											<string>1CFBAAF6129DF87F004F383A</string>
+											<string>1CFBAAF7129DF87F004F383A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -557,7 +557,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>312327044.55473799</real>
+	<real>312342655.22827899</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>

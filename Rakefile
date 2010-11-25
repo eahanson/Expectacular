@@ -53,8 +53,30 @@ desc "Generate code"
 task :gen do
   require 'erb'
   ["m", "h"].each do |extension|
-		output_file = "Classes/Expect.#{extension}"
-		puts "Generating #{output_file}"
-		File.open(output_file, 'w') {|f| f << ERB.new(IO.read("Templates/Expect.erb.#{extension}")).result(binding) }
+    @types = [
+      { :type => "char",               :name => "char",             :converter => "%c", :exact => true }, 
+      { :type => "int",                :name => "int",              :converter => "%d", :exact => true },
+      { :type => "short",              :name => "short",            :converter => "%d", :exact => true },
+      { :type => "long",               :name => "long",             :converter => "%d", :exact => true },
+      { :type => "long long",          :name => "longLong",         :converter => "%d", :exact => true },
+      { :type => "unsigned char",      :name => "unsignedChar",     :converter => "%u", :exact => true },
+      { :type => "unsigned int",       :name => "unsignedInt",      :converter => "%u", :exact => true },
+      { :type => "unsigned short",     :name => "unsignedShort",    :converter => "%u", :exact => true },
+      { :type => "unsigned long",      :name => "unsignedLong",     :converter => "%u", :exact => true },
+      { :type => "unsigned long long", :name => "unsignedLongLong", :converter => "%u", :exact => true },
+      { :type => "float",              :name => "float",            :converter => "%f", :exact => false },
+      { :type => "double",             :name => "double",           :converter => "%d", :exact => false }
+    ]
+    
+    @matchers = [
+      { :predicate => "return expected == actual;", :matcher => "toEqual",         :matcher_description => "to equal" },
+      { :predicate => "return expected != actual;", :matcher => "toNotEqual",      :matcher_description => "to not equal" },
+      { :predicate => "return expected < actual;",  :matcher => "toBeLessThan",    :matcher_description => "to be less than" },
+      { :predicate => "return expected > actual;",  :matcher => "toBeGreaterThan", :matcher_description => "to be greater than" },
+    ]
+
+    output_file = "Classes/Expect.#{extension}"
+    puts "Generating #{output_file}"
+    File.open(output_file, 'w') {|f| f << ERB.new(IO.read("Templates/Expect.erb.#{extension}")).result(binding) }
   end
 end
