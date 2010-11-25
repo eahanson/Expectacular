@@ -90,6 +90,11 @@ task :gen do
     ["m", "h"].each do |extension|
         output_file = "Classes/Expect.#{extension}"
         puts "Generating #{output_file}"
-        File.open(output_file, 'w') {|f| f << ERB.new(IO.read("Templates/Expect.erb.#{extension}")).result(binding) }
+        File.open(output_file, 'w')  do |f| 
+            rendered = ERB.new(IO.read("Templates/Expect.erb.#{extension}")).result(binding)
+            rendered.gsub! /^\s+$/, ""          # remove whitespace from otherwise-empty lines
+            rendered.gsub! /\n{3,}/, "\n\n\n"   # remove multiple contiguous blank lines
+            f << rendered
+        end
     end
 end
