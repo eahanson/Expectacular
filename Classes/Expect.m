@@ -457,6 +457,24 @@
     }
 }
 
+#pragma mark array
+
++ (void)array:(NSArray *)array toContainObject:(id)object {
+    if (![array containsObject:object]) {
+        @throw [ExpectacularFailure expected:array
+                                     matcher:@"to contain object"
+                                      actual:object];
+    }
+}
+
++ (void)array:(NSArray *)array toNotContainObject:(id)object {
+    if ([array containsObject:object]) {
+        @throw [ExpectacularFailure expected:array
+                                     matcher:@"to not contain object"
+                                      actual:object];
+    }
+}
+
 #pragma mark private
 
 + (void)matchesPredicate:(BOOL (^)())predicate expected:(NSString *)expected matcher:(NSString *)matcher actual:(NSString *)actual {

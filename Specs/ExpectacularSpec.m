@@ -230,6 +230,42 @@ describe(@"Expect", ^{
         });
     });
     
+    describe(@"array", ^{
+        __block NSArray *a;
+        
+        beforeEach(^{
+            a = [NSArray arrayWithObjects:@"one", @"two", @"three", nil];            
+        });
+        
+        describe(@"toContainObject", ^{
+            it(@"should pass if the array contains the object", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect array:a toContainObject:@"two"];
+                }];
+            });
+            
+            it(@"should fail if the array does not contain the object", ^{
+                [Expect block:^{
+                    [Expect array:a toContainObject:@"four"];
+                } toThrowExceptionWithReason:@"expected: (\n    one,\n    two,\n    three\n)\nto contain object: four"];
+            });
+        });
+        
+        describe(@"toNotContainObject", ^{
+            it(@"should pass if the array does not contain the object", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect array:a toNotContainObject:@"four"];
+                }];
+            });
+            
+            it(@"should fail if the array does contain the object", ^{
+                [Expect block:^{
+                    [Expect array:a toNotContainObject:@"two"];
+                } toThrowExceptionWithReason:@"expected: (\n    one,\n    two,\n    three\n)\nto not contain object: two"];
+            });
+        });
+    });
+    
 });
 
 SPEC_END

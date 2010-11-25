@@ -140,4 +140,10 @@
 
 + (void)blockToNotThrowException:(void (^)())block;
 
+#pragma mark array
+
++ (void)array:(NSArray *)array toContainObject:(id)object;
+
++ (void)array:(NSArray *)array toNotContainObject:(id)object;
+
 @end
