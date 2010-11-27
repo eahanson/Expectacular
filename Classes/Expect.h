@@ -146,4 +146,8 @@
 
 + (void)array:(NSArray *)array toNotContainObject:(id)object;
 
++ (void)array:(NSArray *)array toContainObjects:(id)object, ...;
+
++ (void)array:(NSArray *)array toNotContainObjects:(id)object, ...;
+
 @end

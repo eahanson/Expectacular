@@ -131,18 +131,60 @@
 
 + (void)array:(NSArray *)array toContainObject:(id)object {
     if (![array containsObject:object]) {
-        @throw [ExpectacularFailure expected:array
+        @throw [ExpectacularFailure expected:[array description]
                                      matcher:@"to contain object"
-                                      actual:object];
+                                      actual:[object description]];
     }
 }
 
 + (void)array:(NSArray *)array toNotContainObject:(id)object {
     if ([array containsObject:object]) {
-        @throw [ExpectacularFailure expected:array
+        @throw [ExpectacularFailure expected:[array description]
                                      matcher:@"to not contain object"
-                                      actual:object];
+                                      actual:[object description]];
     }
+}
+
++ (void)array:(NSArray *)array toContainObjects:(id)object, ... {
+    NSMutableArray *unexpected = [NSMutableArray array];
+    NSMutableArray *actual = [NSMutableArray array];
+    
+    va_list args;
+    va_start(args, object);
+    id obj;
+    for (obj = object; obj != nil; obj = va_arg(args, id)) {
+        [actual addObject:obj];
+        
+        if (![array containsObject:obj]) {
+            [unexpected addObject:obj];
+        }
+    }
+    va_end(args);
+    
+    if ([unexpected count] > 0) {
+        @throw [ExpectacularFailure messageWithFormat:@"expected: %@\nto contain objects: %@\nunexpected objects: %@", array, actual, unexpected];
+    }
+}
+
++ (void)array:(NSArray *)array toNotContainObjects:(id)object, ... {
+    NSMutableArray *unexpected = [NSMutableArray array];
+    NSMutableArray *actual = [NSMutableArray array];
+    
+    va_list args;
+    va_start(args, object);
+    id obj;
+    for (obj = object; obj != nil; obj = va_arg(args, id)) {
+        [actual addObject:obj];
+        
+        if ([array containsObject:obj]) {
+            [unexpected addObject:obj];
+        }
+    }
+    va_end(args);
+    
+    if ([unexpected count] > 0) {
+        @throw [ExpectacularFailure messageWithFormat:@"expected: %@\nto not contain objects: %@\nunexpected objects: %@", array, actual, unexpected];
+    }    
 }
 
 #pragma mark private

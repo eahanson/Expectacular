@@ -264,6 +264,34 @@ describe(@"Expect", ^{
                 } toThrowExceptionWithReason:@"expected: (\n    one,\n    two,\n    three\n)\nto not contain object: two"];
             });
         });
+
+        describe(@"toContainObjects", ^{
+            it(@"should pass if the array contains the objects", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect array:a toContainObjects:@"two", @"three", nil];
+                }];
+            });
+            
+            it(@"should fail if the array does not contain the objects", ^{
+                [Expect block:^{
+                    [Expect array:a toContainObjects:@"three", @"four", nil];
+                } toThrowExceptionWithReason:@"expected: (\n    one,\n    two,\n    three\n)\nto contain objects: (\n    three,\n    four\n)\nunexpected objects: (\n    four\n)"];
+            });
+        });
+        
+        describe(@"toNotContainObjects", ^{
+            it(@"should pass if the array does not contain the objects", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect array:a toNotContainObjects:@"four", @"five", nil];
+                }];
+            });
+            
+            it(@"should fail if the array does contain the objects", ^{
+                [Expect block:^{
+                    [Expect array:a toNotContainObjects:@"two", @"four", nil];
+                } toThrowExceptionWithReason:@"expected: (\n    one,\n    two,\n    three\n)\nto not contain objects: (\n    two,\n    four\n)\nunexpected objects: (\n    two\n)"];
+            });
+        });
     });
     
 });
