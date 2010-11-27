@@ -52,3 +52,7 @@ The tests are all written in [Cedar](https://github.com/pivotal/cedar).
 ## Status
 
 Just getting started. Lots of stuff is currently missing. Fork away!
+
+## Licence
+
+This software is licensed under the MIT License.

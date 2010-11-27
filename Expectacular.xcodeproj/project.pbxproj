@@ -36,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		1C22B03012A1A28600D29ADD /* MIT.LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MIT.LICENSE; sourceTree = "<group>"; };
 		1C311694129756E70085CF37 /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
 		1C66E1AB129B130400AA1B63 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1CFBA97C129DB386004F383A /* Expect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expect.h; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				1C66E1AB129B130400AA1B63 /* README.md */,
+				1C22B03012A1A28600D29ADD /* MIT.LICENSE */,
 				1C311694129756E70085CF37 /* Rakefile */,
 				1CFBA9B7129DB5A2004F383A /* Expectacular_Prefix.pch */,
 				1CFBA983129DB390004F383A /* Specs */,

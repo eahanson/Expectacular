@@ -5,7 +5,6 @@
 		activeExecutable = 1C31167A1297568E0085CF37 /* Specs */;
 		activeTarget = AE4277AB11EF914F00CFF331 /* Specs */;
 		addToTargets = (
-			AE4277AB11EF914F00CFF331 /* Specs */,
 		);
 		codeSenseManager = 1C311692129756AD0085CF37 /* Code sense */;
 		executables = (
@@ -101,6 +100,10 @@
 			1C22B01E12A1A18400D29ADD /* PBXTextBookmark */ = 1C22B01E12A1A18400D29ADD /* PBXTextBookmark */;
 			1C22B01F12A1A18400D29ADD /* PBXTextBookmark */ = 1C22B01F12A1A18400D29ADD /* PBXTextBookmark */;
 			1C22B02012A1A18400D29ADD /* PBXTextBookmark */ = 1C22B02012A1A18400D29ADD /* PBXTextBookmark */;
+			1C22B03112A1A29700D29ADD /* PBXTextBookmark */ = 1C22B03112A1A29700D29ADD /* PBXTextBookmark */;
+			1C22B03212A1A29700D29ADD /* PBXTextBookmark */ = 1C22B03212A1A29700D29ADD /* PBXTextBookmark */;
+			1C22B03312A1A29700D29ADD /* PBXTextBookmark */ = 1C22B03312A1A29700D29ADD /* PBXTextBookmark */;
+			1C22B03412A1A29700D29ADD /* PBXTextBookmark */ = 1C22B03412A1A29700D29ADD /* PBXTextBookmark */;
 			1C66E15E129AD50100AA1B63 = 1C66E15E129AD50100AA1B63 /* PBXTextBookmark */;
 			1C66E160129AD50100AA1B63 = 1C66E160129AD50100AA1B63 /* PBXTextBookmark */;
 			1C66E193129B0FFF00AA1B63 = 1C66E193129B0FFF00AA1B63 /* PBXTextBookmark */;
@@ -534,6 +537,53 @@
 		vrLen = 1282;
 		vrLoc = 6323;
 	};
+	1C22B03012A1A28600D29ADD /* MIT.LICENSE */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {976, 641}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1022}";
+		};
+	};
+	1C22B03112A1A29700D29ADD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1CFBA9C3129DB8D3004F383A /* Expect.erb.m */;
+		name = "Expect.erb.m: 177";
+		rLen = 0;
+		rLoc = 6924;
+		rType = 0;
+		vrLen = 1282;
+		vrLoc = 6323;
+	};
+	1C22B03212A1A29700D29ADD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1C66E1AB129B130400AA1B63 /* README.md */;
+		name = "README.md: 58";
+		rLen = 0;
+		rLoc = 1780;
+		rType = 0;
+		vrLen = 1275;
+		vrLoc = 506;
+	};
+	1C22B03312A1A29700D29ADD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1C22B03012A1A28600D29ADD /* MIT.LICENSE */;
+		name = "MIT.LICENSE: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1022;
+		vrLoc = 0;
+	};
+	1C22B03412A1A29700D29ADD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1C22B03012A1A28600D29ADD /* MIT.LICENSE */;
+		name = "MIT.LICENSE: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1022;
+		vrLoc = 0;
+	};
 	1C31167A1297568E0085CF37 /* Specs */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -641,9 +691,9 @@
 	};
 	1C66E1AB129B130400AA1B63 /* README.md */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {976, 880}}";
-			sepNavSelRange = "{1071, 0}";
-			sepNavVisRange = "{391, 1328}";
+			sepNavIntBoundsRect = "{{0, 0}, {976, 944}}";
+			sepNavSelRange = "{1780, 0}";
+			sepNavVisRange = "{506, 1275}";
 		};
 	};
 	1C66E200129B221800AA1B63 /* PBXTextBookmark */ = {
