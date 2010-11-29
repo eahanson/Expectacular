@@ -7,6 +7,9 @@
 SPEC_BEGIN(ExpectacularSpec)
 
 describe(@"Expect", ^{
+    
+#pragma mark block
+    
     describe(@"block", ^{
         describe(@"toThrow", ^{
             it(@"should pass if the block throws", ^{
@@ -57,6 +60,8 @@ describe(@"Expect", ^{
             });
         });
     });
+    
+#pragma mark object
     
     describe(@"object", ^{
         describe(@"toEqual", ^{
@@ -123,7 +128,41 @@ describe(@"Expect", ^{
             });
             
         });
+        
+        describe(@"toBeNil", ^{
+            it(@"should pass if the object is nil", ^{
+                [Expect blockToNotThrowException:^{
+                    id obj = nil;
+                    [Expect objectToBeNil:obj];
+                }];
+            });
+            
+            it(@"should fail if the object is not nil", ^{
+                [Expect block:^{
+                    id obj = @"foo";
+                    [Expect objectToBeNil:obj];
+                } toThrowExceptionWithReason:@"expected: foo\nto be nil"];
+            });
+        });
+
+        describe(@"toNotBeNil", ^{
+            it(@"should pass if the object is not nil", ^{
+                [Expect blockToNotThrowException:^{
+                    id obj = @"foo";
+                    [Expect objectToNotBeNil:obj];
+                }];
+            });
+            
+            it(@"should fail if the object is nil", ^{
+                [Expect block:^{
+                    id obj = nil;
+                    [Expect objectToNotBeNil:obj];
+                } toThrowExceptionWithReason:@"expected object to not be nil"];
+            });
+        });
     });
+    
+#pragma mark BOOL
     
     describe(@"BOOL", ^{
         describe(@"toEqual", ^{
@@ -140,6 +179,8 @@ describe(@"Expect", ^{
             });
         });
     });
+    
+#pragma mark int
     
     describe(@"int", ^{
         describe(@"toEqual", ^{
@@ -200,6 +241,8 @@ describe(@"Expect", ^{
         
     });
     
+#pragma mark float
+    
     describe(@"float", ^{
         describe(@"toEqual", ^{
             it(@"shoud pass if both floats are equal (within the tolerance)", ^{
@@ -229,6 +272,8 @@ describe(@"Expect", ^{
             });
         });
     });
+    
+#pragma mark array
     
     describe(@"array", ^{
         __block NSArray *a;

@@ -98,6 +98,18 @@
     }
 }
 
++ (void)objectToBeNil:(id)expected {
+    if (expected != nil) {
+        @throw [ExpectacularFailure messageWithFormat:@"expected: %@\nto be nil", [expected description]];
+    }
+}
+
++ (void)objectToNotBeNil:(id)expected {
+    if (expected == nil) {
+        @throw [ExpectacularFailure messageWithFormat:@"expected object to not be nil"];
+    }
+}
+
 #pragma mark block
 
 + (void)block:(void (^)())block toThrowExceptionWithReason:(NSString *)reason {

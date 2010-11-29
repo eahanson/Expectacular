@@ -134,6 +134,10 @@
 
 + (void)object:(NSObject *)expected toNotEqual:(NSObject *)actual;
 
++ (void)objectToBeNil:(id)expected;
+
++ (void)objectToNotBeNil:(id)expected;
+
 #pragma mark block
 
 + (void)block:(void (^)())block toThrowExceptionWithReason:(NSString *)reason;
