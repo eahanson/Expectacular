@@ -339,6 +339,38 @@ describe(@"Expect", ^{
         });
     });
     
+#pragma mark predicate
+    
+    describe(@"predicate", ^{
+        describe(@"predicateToBeTrue", ^{
+            it(@"should pass if the predicate is true", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect predicateToBeTrue:^BOOL { return YES; }];
+                }];
+            });
+            
+            it(@"should fail if the predicate is false", ^{
+                [Expect block:^{
+                    [Expect predicateToBeTrue:^BOOL { return NO; }];
+                } toThrowExceptionWithReason:@"expected predicate to be true"];
+            });
+        });
+        
+        describe(@"predicateToBeFalse", ^{
+            it(@"should pass if the predicate is false", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect predicateToBeFalse:^BOOL { return NO; }];
+                }];
+            });
+            
+            it(@"should fail if the predicate is true", ^{
+                [Expect block:^{
+                    [Expect predicateToBeFalse:^BOOL { return YES; }];
+                } toThrowExceptionWithReason:@"expected predicate to be false"];
+            });
+        });
+    });
+    
 });
 
 SPEC_END

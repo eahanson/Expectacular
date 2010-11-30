@@ -154,4 +154,10 @@
 
 + (void)array:(NSArray *)array toNotContainObjects:(id)object, ...;
 
+#pragma mark predicate
+
++ (void)predicateToBeTrue:(BOOL (^)())predicate;
+
++ (void)predicateToBeFalse:(BOOL (^)())predicate;
+
 @end

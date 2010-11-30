@@ -199,6 +199,21 @@
     }    
 }
 
+#pragma mark predicate
+
++ (void)predicateToBeTrue:(BOOL (^)())predicate {
+    if (!predicate()) {
+        @throw [ExpectacularFailure messageWithFormat:@"expected predicate to be true"];
+    }
+}
+
++ (void)predicateToBeFalse:(BOOL (^)())predicate {
+    if (predicate()) {
+        @throw [ExpectacularFailure messageWithFormat:@"expected predicate to be false"];
+    }
+}
+
+
 #pragma mark private
 
 + (void)matchesPredicate:(BOOL (^)())predicate expected:(NSString *)expected matcher:(NSString *)matcher actual:(NSString *)actual {
