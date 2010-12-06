@@ -199,6 +199,33 @@
     }    
 }
 
+#pragma mark string
+
++ (void)string:(NSString *)string toHavePrefix:(NSString *)prefix {
+    if (![string hasPrefix:prefix]) {
+        @throw [ExpectacularFailure messageWithFormat:@"expected: %@\nto have prefix: %@", string, prefix];
+    }
+}
+
++ (void)string:(NSString *)string toNotHavePrefix:(NSString *)prefix {
+    if ([string hasPrefix:prefix]) {
+        @throw [ExpectacularFailure messageWithFormat:@"expected: %@\nto not have prefix: %@", string, prefix];
+    }
+}
+
++ (void)string:(NSString *)string toHaveSuffix:(NSString *)suffix {
+    if (![string hasSuffix:suffix]) {
+        @throw [ExpectacularFailure messageWithFormat:@"expected: %@\nto have suffix: %@", string, suffix];
+    }
+}
+
++ (void)string:(NSString *)string toNotHaveSuffix:(NSString *)suffix {
+    if ([string hasSuffix:suffix]) {
+        @throw [ExpectacularFailure messageWithFormat:@"expected: %@\nto not have suffix: %@", string, suffix];
+    }
+}
+
+
 #pragma mark predicate
 
 + (void)predicateToBeTrue:(BOOL (^)())predicate {

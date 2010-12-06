@@ -51,7 +51,17 @@
 + (void)array:(NSArray *)array toContainObjects:(id)object, ...;
 
 + (void)array:(NSArray *)array toNotContainObjects:(id)object, ...;
-    
+
+#pragma mark string
+
++ (void)string:(NSString *)string toHavePrefix:(NSString *)prefix;
+
++ (void)string:(NSString *)string toNotHavePreix:(NSString *)prefix;
+
++ (void)string:(NSString *)string toHaveSuffix:(NSString *)suffix;
+
++ (void)string:(NSString *)string toNotHaveSuffix:(NSString *)suffix;
+
 #pragma mark predicate
 
 + (void)predicateToBeTrue:(BOOL (^)())predicate;

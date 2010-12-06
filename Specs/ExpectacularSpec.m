@@ -339,6 +339,66 @@ describe(@"Expect", ^{
         });
     });
     
+#pragma mark string
+    
+    describe(@"string", ^{
+        describe(@"toHavePrefix", ^{
+            it(@"should pass if the string begins with the expected string", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect string:@"peanut" toHavePrefix:@"pea"];
+                }];
+            });
+            
+            it(@"should fail if the string does not start with the expected string", ^{
+                [Expect block:^{
+                    [Expect string:@"peanut" toHavePrefix:@"coco"];
+                } toThrowExceptionWithReason:@"expected: peanut\nto have prefix: coco"];
+            });
+        });
+
+        describe(@"toNotHavePrefix", ^{
+            it(@"should pass if the string does not start with the expected string", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect string:@"peanut" toNotHavePrefix:@"coco"];
+                }];
+            });
+            
+            it(@"should fail if the string does start with the expected string", ^{
+                [Expect block:^{
+                    [Expect string:@"peanut" toNotHavePrefix:@"pea"];
+                } toThrowExceptionWithReason:@"expected: peanut\nto not have prefix: pea"];
+            });
+        });
+
+        describe(@"toHaveSuffix", ^{
+            it(@"should pass if the string ends with the expected string", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect string:@"peanut" toHaveSuffix:@"nut"];
+                }];
+            });
+            
+            it(@"should fail if the string does not end with the expected string", ^{
+                [Expect block:^{
+                    [Expect string:@"peanut" toHaveSuffix:@"soup"];
+                } toThrowExceptionWithReason:@"expected: peanut\nto have suffix: soup"];
+            });
+        });
+        
+        describe(@"toNotHaveSuffix", ^{
+            it(@"should pass if the string does not end with the expected string", ^{
+                [Expect blockToNotThrowException:^{
+                    [Expect string:@"peanut" toNotHaveSuffix:@"soup"];
+                }];
+            });
+            
+            it(@"should fail if the string does end with the expected string", ^{
+                [Expect block:^{
+                    [Expect string:@"peanut" toNotHaveSuffix:@"nut"];
+                } toThrowExceptionWithReason:@"expected: peanut\nto not have suffix: nut"];
+            });
+        });
+    });
+    
 #pragma mark predicate
     
     describe(@"predicate", ^{
