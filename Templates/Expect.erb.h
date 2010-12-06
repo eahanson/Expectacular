@@ -56,7 +56,7 @@
 
 + (void)string:(NSString *)string toHavePrefix:(NSString *)prefix;
 
-+ (void)string:(NSString *)string toNotHavePreix:(NSString *)prefix;
++ (void)string:(NSString *)string toNotHavePrefix:(NSString *)prefix;
 
 + (void)string:(NSString *)string toHaveSuffix:(NSString *)suffix;
 
